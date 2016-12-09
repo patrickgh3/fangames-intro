@@ -1,37 +1,42 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-	  <meta http-equiv="Content-Type" content="text/html;" />
-    <title>Intro to Fangames</title>
+    <title>Introduction to Fangames</title>
+    <!--<meta name="description" content="TODOTODOTODO"/>-->
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="images/favicon.png">
-    <link rel="stylesheet" href="main.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="js/top_image_stuff.js"></script>
+    <script src="js/detect_mobile_browser.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
+         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+             })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
       ga('create', 'UA-78502940-1', 'auto');
-      ga('send', 'pageview');
-
+        ga('send', 'pageview');
     </script>
-  </head>
+    </head>
   <body>
     <div id="wrapper">
-      <h1 id="top-header">Intro to Fangames</h1>
-      <!--Guy Games, also known as "I Wanna games", "IWBTG fangames", or just "fangames", are a niche genre of games with a passionate community of players and hobbyist developers. This page aims to be an overview for newcomers to the scene.
+      <h1>Introduction to Fangames (WIP)</h1>
+      <p>This is a WIP, don't share the link plz</p>
+
+      <p>
+      Fangames (a.k.a. "Guy games" or "I Wanna" games) are a niche genre of freeware platformers. Based on tight physics and instant respawns at their core, fangames have evolved into many genres including action adventure, intricate "needle" platforming, bullet-hell-esque "avoidance", puzzle, humorous traps, atmospheric, and more. They are made by people all over the world, and have a lot of charm that's hard to explain.
+      </p>
+      <p>
+      We are active 24 hours a day on the <a href="https://www.twitch.tv/directory/game/I%20Wanna%20Be%20The%20Guy", target="_blank">Twitch IWBTG directory</a>, which is a cornerstone of our community. We also <a href="http://www.speedrun.com/iwbtgfg" target="_blank">speedrun fangames</a>. And the main website which indexes most of the 5000+ fangames is <a href="http://delicious-fruit.com/" target="_blank">Delicious Fruit</a>.
+      </p>
+
       <br>
-      <br>-->
-
-
-      <div style="clear: both;"></div>
       <div class="top-image" id="top1"></div>
       <div class="top-image" id="top2"></div>
       <div class="top-image" id="top3"></div>
-
+      <div style="clear: both;"></div>
       <script>
         // http://stackoverflow.com/questions/10062811/can-i-set-the-height-of-a-div-based-on-a-percentage-based-width
         $(window).ready(updateHeight);
@@ -47,215 +52,83 @@
         createImage(document.getElementById("top3"));
 
         $(document).ready(function(){
-          var time = 8000;
-          var offset = 2000;
-          setTimeout(function(){setInterval('topImageUpdate(document.getElementById("top1"))', time);}, offset);
-          setTimeout('topImageUpdate(document.getElementById("top1"))', offset);
+          var time = 6000;
+          setTimeout(function(){setInterval('topImageUpdate(document.getElementById("top1"))', time);}, time/3);
+          setTimeout('topImageUpdate(document.getElementById("top1"))', time/3.0);
 
-          setTimeout(function(){setInterval('topImageUpdate(document.getElementById("top2"))', time);}, time/3+offset);
-          setTimeout('topImageUpdate(document.getElementById("top2"))', time/3+offset);
+          setTimeout(function(){setInterval('topImageUpdate(document.getElementById("top2"))', time);}, 2*time/3);
+          setTimeout('topImageUpdate(document.getElementById("top2"))', 2*time/3.0);
 
-          setTimeout(function(){setInterval('topImageUpdate(document.getElementById("top3"))', time);}, time*2/3+offset);
-          setTimeout('topImageUpdate(document.getElementById("top3"))', time*2/3+offset);
+          setTimeout(function(){setInterval('topImageUpdate(document.getElementById("top3"))', time);}, 3*time/3);
+          setTimeout('topImageUpdate(document.getElementById("top3"))', 3*time/3.0);
         })
       </script>
-      <div style="clear: both;"></div>
+
+      <h2>How can I get connected with the community?</h2>
+      <ul>
+        <li>Follow <a href="https://www.twitch.tv/directory/game/I%20Wanna%20Be%20The%20Guy" target="_blank">IWBTG on Twitch</a> and enjoy 24/7 fangame streams! Also check out our <a href="http://www.twitch.tv/team/thewannabes" target="_blank">Twitch team</a>!</li>
+        <li>Join the <a href="TODOTODOTODO" target="_blank">Fangame Newcomers Discord</a>! Also join Discords of your favorite fangame Twitch streamers!</li>
+        <li>Register and discuss on <a href="http://www.iwannacommunity.com/forum/index.php" target="_blank">our forums</a>! They're a little slow but definitely active.</li>
+        <li>Browse <a href="http://delicious-fruit.com/" target="_blank">Delicious Fruit</a> and review fangames you've played!</li>
+      </ul>
+
+      <h2>Which fangames should I play?</h2>
+      <p>
+      1. Check this list of some beginner fangames:
+      <ul style="columns:4">
+        <li><a href="" target="_blank">Game name</a></li>
+        <li><a href="" target="_blank">Game name</a></li>
+        <li><a href="" target="_blank">Game name</a></li>
+        <li><a href="" target="_blank">Game name</a></li>
+        <li><a href="" target="_blank">Game name</a></li>
+        <li><a href="" target="_blank">Game name</a></li>
+        <li><a href="" target="_blank">Game name</a></li>
+        <li><a href="" target="_blank">Game name</a></li>
+        <li><a href="" target="_blank">Game name</a></li>
+        <li><a href="" target="_blank">Game name</a></li>
+        <li><a href="" target="_blank">Game name</a></li>
+      </ul>
+      2. Search by rating, difficulty, tags, and more on <a href="http://delicious-fruit.com/" target="_blank">Delicious Fruit</a>.
+      <br>
+      3. Check out curated lists by <a href="http://www.tinyurl.com/geezerslist" target="_blank">Geezer</a>, <a href="http://tinyurl.com/lgeymuu" target="_blank">Sunbla & Zero</a>,  <a href="http://www.iwannacommunity.com/forum/index.php?topic=199.0" target="_blank">Paragus</a>, <a href="https://docs.google.com/spreadsheet/ccc?key=0Ai5kGaEf_4pidE5NNklnR2VPMUZEbklDeGNldnRGQmc&usp=sharing" target="_blank">Denferok</a>.
+      <p>
 
 
-      <!--<br>
-      In 2007, a guy called Kayin released <a href="http://iwbtg.kayin.moe/" target="_blank">I Wanna Be The Guy</a>, a freeware platformer with an interesting mix of challenge and humor. People were inspired to make their own fangames in the style of IWBTG, with their own unique take on its design. Over the years, people from all over the world joined in, and fangames grew into a phenomenon of their own, with their own genres, tropes, and general style. Today, in 2016, there are over 4000 fangames, and communities around the world are going strong, both making and playing fangames, and pushing them to their limits.
-      <br>
-      <br>
-      Most fangames share a certain odd set of traits: the same exact player physics with a double-jump, 32-pixel blocks and spikes, a screen resolution of 800x608, a few specific borrowed graphics, and gameplay inspired by other fangames. To give you some examples of what gameplay is like, below is a list of a few common tropes and some games listed for each.
-      <br>-->
-      
-      <br>
-      Fangames, also known as Guy Games and I Wanna games, are a niche subgenre of platformers. You play as an 11 by 21px kid with a double jump and tight controls, and you navigate interesting and challenging platforming. We, the community who make, play, and speedrun these games, are active 24 hours a day on Twitch, especially our <a href="https://www.twitch.tv/team/thewannabes" target="_blank">Twitch Team</a>.
-      <br><br>
-      Fangame difficulty can range from easy, such as <a href="http://delicious-fruit.com/ratings/game_details.php?id=10550" target="_blank">I wanna be the Animus</a>, to notoriously difficult such as <a href="http://delicious-fruit.com/ratings/game_details.php?id=14681" target="_blank">I wanna Kill the Kamilia 3</a>. But challenge isn't the only thing fangames have to offer; there's huge variety in the 5000+ fangames listed on <a href="http://delicious-fruit.com/" target="_blank">Delicious Fruit</a>.
-      <br>
-      
-      <!--<br>
-      Fangames are a unique subgenre of platformers with their own weird charm. As a tiny kid with tight movement, you weave through spikes, dodge apples, fight bosses, and experience thousands of tiny adventures. We, the people who play, make, and speedrun these games, are a small but passionate community and we'd love to spread the word about the awesomeness of fangames.
-      <br><br>
-      <a href="http://iwbtg.kayin.moe/" target="_blank">I Wanna Be The Guy</a> was the original game back in 2007. Since then people have made over 4000 fangames, and they've evolved into a phenomenon of their own. A few fangames are popular on Twitch, notably I Wanna Be The Boshy, but it's just the tip of the iceberg when it comes to the variety these games have to offer.
-      <br>-->
+      <h2>What is making fangames like?</h2>
+      <p>
+      The other side of the community is <i>making</i> fangames! It's open to everyone, and can be very fun and rewarding. There's lots of potential for new design ideas, there are many talented fangame creators to give help and collaborate with, and your game is guaranteed playtime on Twitch!
+      </p>
+      <p>
+      If you want to jump in, check out <a href="http://klazen.com/IWBTG/tutorial/dev_tutorial.html" target="_blank">Klazen's Tutorial</a>. We're also happy to help on the community discord and the forums.
+      </p>
 
-
-      <script>
-        function write_trope(title, description, games) {
-            document.write(`
-              <div class="trope">
-                <h2>${title}</h2>
-                <p>${description}</p>
-                
-            `);
-            
-            for (var i=0; i<games.length; i++) {
-              document.write(`
-                <div class="game">
-                  <img src="${games[i][2]}"/>
-                  <br>
-                  <a href="${games[i][1]}" target="_blank">${games[i][0]}</a>
-                </div>
-              `);
-            }
-            
-            document.write(`
-              
-              </div>
-              <div style="clear: both;"></div>
-            `);
-        }
-        
-        var pic = "http://placehold.it/350x200";
-        var name = name
-        var link = "http://www.google.com"
-        
-        write_trope("Adventure"
-        ,"Adventure fangames are well-rounded, have lots of variety, and give the player a sense of exploration."
-        ,[["I wanna find my Destiny"
-        ,"http://delicious-fruit.com/ratings/game_details.php?id=12322"
-        ,"http://delicious-fruit.com/ratings/screenshots/12322_0000032c"]
-        ,["I wanna be the 8bit","http://delicious-fruit.com/ratings/game_details.php?id=11862"
-        ,"http://delicious-fruit.com/ratings/screenshots/11862_000001c0"]
-        ,["I wanna be GENKI with you"
-        ,"http://delicious-fruit.com/ratings/game_details.php?id=11404"
-        ,"http://delicious-fruit.com/ratings/screenshots/11404_0000018e"]
-        ,["I wanna be the Scribble"
-        ,"http://delicious-fruit.com/ratings/game_details.php?id=16193"
-        ,"http://delicious-fruit.com/ratings/screenshots/16193_00001154"]
-        ]);
-        
-        write_trope("Needle"
-        ,"Needle games focus on intricate and challenging spike platforming."
-        ,[["I wanna go across the Rainbow"
-        ,"http://delicious-fruit.com/ratings/game_details.php?id=11567"
-        ,"http://delicious-fruit.com/ratings/screenshots/11567_000002fd"]
-        ,["Not Another Needle Game"
-        ,"http://delicious-fruit.com/ratings/game_details.php?id=12534"
-        ,"http://delicious-fruit.com/ratings/screenshots/12534_00000325"]
-        ,["I wanna clear 50 neon floors"
-        ,"http://delicious-fruit.com/ratings/game_details.php?id=15473"
-        ,"http://delicious-fruit.com/ratings/screenshots/15473_00000c0d"]
-        ,["I wanna be the Catharsis"
-        ,"http://delicious-fruit.com/ratings/game_details.php?id=11899"
-        ,"http://delicious-fruit.com/ratings/screenshots/11899_0000033b"]
-        ]);
-        
-        write_trope("Trap"
-        ,"Also known as \"troll\" games, these fangames are full of hilarious and genuinely clever traps."
-        ,[["I wanna be the DAREJAR"
-        ,"http://delicious-fruit.com/ratings/game_details.php?id=14810"
-        ,"http://delicious-fruit.com/ratings/screenshots/14810_00000420"]
-        ,["I wanna be the Metamorphosis"
-        ,"http://delicious-fruit.com/ratings/game_details.php?id=14759"
-        ,"http://delicious-fruit.com/ratings/screenshots/14759_0000086c"]
-        ,["I wannyaaaaaaaaaa"
-        ,"http://delicious-fruit.com/ratings/game_details.php?id=14701"
-        ,"http://delicious-fruit.com/ratings/screenshots/14701_000006f0"]
-        ]);
-        
-        write_trope("Avoidance"
-        ,"Dodge interesting projectile patterns and admire visual effects in sync with the music."
-        ,[["I wanna use Snow magic"
-        ,"http://delicious-fruit.com/ratings/game_details.php?id=11739"
-        ,"http://delicious-fruit.com/ratings/screenshots/11739_00000351"]
-        ,["I wanna be the Kaleidoscope"
-        ,"http://delicious-fruit.com/ratings/game_details.php?id=15698"
-        ,"http://delicious-fruit.com/ratings/screenshots/15698_00000dc4"]
-        ,["I wanna be the Music2"
-        ,"http://delicious-fruit.com/ratings/game_details.php?id=10915"
-        ,"http://delicious-fruit.com/ratings/screenshots/10915_000000a1"]
-        ]);
-        
-        write_trope("Medley"
-        ,"Medley games patch together small segments from hundeds of fangames in sequence, kind of like a collage."
-        ,[["I Wanna Kill The Kamilia 2"
-        ,"http://delicious-fruit.com/ratings/game_details.php?id=14680"
-        ,"http://delicious-fruit.com/ratings/screenshots/14680_00000be1"]
-        ,["I wanna get Cultured"
-        ,"http://delicious-fruit.com/ratings/game_details.php?id=12333"
-        ,"http://delicious-fruit.com/ratings/screenshots/12333_0000002c"]
-        ,["I wanna get Rekt"
-        ,"http://delicious-fruit.com/ratings/game_details.php?id=12335"
-        ,"http://delicious-fruit.com/ratings/screenshots/12335_000000fc"]
-        ,["I wanna kill the Blue Mage"
-        ,"http://delicious-fruit.com/ratings/game_details.php?id=12371"
-        ,"http://delicious-fruit.com/ratings/screenshots/12371_00000cbc"]
-        ]);
-      </script>
-
-
-      <h1>Community links</h1>
-      <a href="http://delicious-fruit.com/" target="_blank">Delicious Fruit</a> is a site where you can browse, rate, and tag fangames. It also has some useful links on the homepage.
-      <br>
-      <a href="http://www.twitch.tv/team/thewannabes" target="_blank">The Wannabes</a> is our Twitch team where cool people stream fangames every day!
-      <br>
-      <a href="http://www.iwannacommunity.com/forum/index.php" target="_blank">I Wanna Community</a> is our forums site. We also have TeamSpeak and Discord servers listed here.
-      <br>
-      <br>
-      These are links for the English-speaking or "western" community. There are other fangame communities from all over the world, including Japan, Korea, China, and many European countries, which have their own sites.
-
-
-      <h1>Some Beginner Fangames</h1>
-      If you want to try playing fangames but aren't sure where to start, here are some recommendations.
-      <br>
-      <br>
-      <a href="http://www.mediafire.com/download/84j65pzcbs4339b/I+wanna+be+the+Little+runner.zip" target="_blank">I wanna be the Little runner</a>
-      <br>
-      <a href="http://www1.axfc.net/u/3294668.zip" target="_blank">I wanna challenge 100 trials!!</a>
-      <br>
-      <a href="http://www1.axfc.net/u/3237283" target="_blank">I wanna be the Animus</a>
-      <br>
-      <a href="https://www.mediafire.com/?cn1p7tq0w9tcpsp" target="_blank">I wanna be the Aura</a>
-      <br>
-      <a href="http://www.mediafire.com/download/2ocw2o5bk4cpay0/I+wanna+be+the+Dark+Blue+ver1.0.exe" target="_blank">I wanna be the Dark Blue</a>
-      <br>
-      <br>
-      Here are some <a href="http://iwannacommunity.com/forum/index.php?topic=2202" target="_blank">instructions</a> for the axfc.net links.
-
-
-      <h1>Some Curated Lists</h1>
-      Several community members have extensive lists of games they personally recommend.
-      <br>
-      <br>
-      <a href="http://www.iwannacommunity.com/forum/index.php?topic=199.0" target="_blank">Para's Favorite List</a>
-      <br>
-      <a href="http://tinyurl.com/lgeymuu" target="_blank">Sunbla's & Zero's Recommended List</a>
-      <br>
-      <a href="http://www.tinyurl.com/geezerslist" target="_blank">Thenewgeezer's List</a>
-      <br>
-      <a href="https://docs.google.com/spreadsheet/ccc?key=0Ai5kGaEf_4pidE5NNklnR2VPMUZEbklDeGNldnRGQmc&usp=sharing" target="_blank">Denferok's List</a>
-
-
-      <h1>Making fangames</h1>
-      Most fangames are made in a piece of software called GameMaker, which is powerful and beginner-friendly software for 2D game development. You're by no means forced to use GameMaker, but just be aware that the standard player physics people are used to are implemented in GameMaker.
-      <br><br>
-      <a href="http://klazen.com/IWBTG/tutorial/dev_tutorial.html" target="_blank">Klazen's Tutorial</a> is pretty much the go-to resource for starting out.
-      <br><br>
-      You can post in the forums if you have any programming, design, or other questions. We have quite a few experienced people who enjoy helping others out with making fangames.
-      <br>
-
+      <h2>I want to know more about fangames!</h2>
+      <p>
+      This all started in 2007 when Kayin made the original <a href="http://kayin.moe/iwbtg/", target="_blank">I Wanna Be The Guy</a>, which was full of references, traps, and humor. In the years since then, people made fangames that riffed on IWBTG's ideas and improved the player physics. Gradually fangames evolved into a phenomemon that's seperate from the original, with their own subgeneres, tropes, and inside jokes.
+      </p>
+      <p>
+      Could put more FAQ-type stuff here. Suggestions plz. Maybe about the Japanese and other communities.
+      </p>
+      <p>
+      annual marathon, free, not very gpu-intensive, many computers can run it, default controls (shifts, Z, R, Escape)
+      </p>
 
       <div id="footer">
+        Made by <a href="https://www.twitch.tv/patrickgh3" target="_blank">Patrick</a>
+        <br>
         <script>
-          document.write("Page last modified on "+document.lastModified);
+          document.write("Last modified "+document.lastModified);
         </script>
-        <br>Made by <a href="https://www.twitch.tv/patrickgh3" target="_blank">Patrick</a>
       </div>
-    </div>
 
+    </div><!-- id=wrapper -->
 
     <script>
-        if (mobilecheck()) {
-          $('#wrapper').css('width', '92%');
-          $('#wrapper').css('margin', '0');
-          $('#wrapper').css('padding', '4%');
-          //$('.trope').css('width', '100%');
-        }
-      </script>
-
-
+      if (mobilecheck()) {
+        $('#wrapper').css('width', '92%');
+        $('#wrapper').css('margin', '0');
+        $('#wrapper').css('padding', '4%');
+      }
+    </script>
   </body>
 </html>
