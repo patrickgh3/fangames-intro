@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Fangames Introduction</title>
+    <title>Overview of Fangames</title>
     <!--<meta name="description" content="TODOTODOTODO"/>-->
     <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
     <meta charset="UTF-8">
@@ -22,99 +22,116 @@
     </head>
   <body>
     <div id="wrapper">
-      <h1><img id="title-image" src="images/icon_big.png"/>Fangames Introduction</h1>
 
-      <p>
-      Fangames (a.k.a. "Guy games" or "I Wanna" games) are a niche genre of freeware platformers. Based on tight physics and instant respawns at their core, fangames have evolved far past the original IWBTG into their own phenomenon with subgenres and a passionate, growing community.
-      </p>
-      <p>
-      Our community plays and chats about fangames 24 hours a day on the <a href="https://www.twitch.tv/directory/game/I%20Wanna%20Be%20The%20Guy", target="_blank">Twitch IWBTG directory</a>. We also <a href="http://www.speedrun.com/iwbtgfg" target="_blank">speedrun fangames</a>. And the main website which indexes most of the 5000+ fangames is <a href="http://delicious-fruit.com/" target="_blank">Delicious Fruit</a>.
-      </p>
-
-      <div class="top-image-container">
-        <div class="top-image" id="top1"></div>
-        <div class="top-image" id="top2"></div>
-        <div class="top-image" id="top3"></div>
-        <div style="clear: both;"></div>
+      <div id="header">
+        <div id="title">
+          <img id="title-image" src="images/icon_big.png"/>
+          <div style="float: left;">
+            <h1>Overview of Fangames</h1>
+            <br>for newcomers
+          </div>
+          <div style="clear: both;"></div>
+        </div>
+        <nav role="navigation">
+          <a href="http://www.iwannacommunity.com/forum/index.php" target="_blank">I Wanna Community Forums</a>
+          <a href="http://delicious-fruit.com/index.php" target="_blank">Delicious-Fruit.com</a>
+          <a href="http://klazen.com/IWBTG/tutorial/dev_tutorial.html" target="_blank">Fangame Dev Tutorial</a>
+        </nav>
       </div>
-      <script>
-        // http://stackoverflow.com/questions/10062811/can-i-set-the-height-of-a-div-based-on-a-percentage-based-width
-        $(window).ready(updateHeight);
-        $(window).resize(updateHeight);
-        function updateHeight() {
-            var div = $('.top-image');
-            var width = div.width();
-            div.css('height', width * (608/800));
-        }
 
-        createImage(document.getElementById("top1"));
-        createImage(document.getElementById("top2"));
-        createImage(document.getElementById("top3"));
+      <div id="content">
+        <p>
+        Fangames (a.k.a. "Guy games" or "I Wanna" games) are a niche genre of freeware platformers. Based on tight physics and instant respawns at their core, fangames have subgenres like action-adventure, intricate platforming, bullet hell, medleys of other fangames, and more.
+        </p>
+        <p>
+        Our community plays and chats about fangames 24 hours a day on the <a href="https://www.twitch.tv/directory/game/I%20Wanna%20Be%20The%20Guy", target="_blank">Twitch IWBTG directory</a>. We also <a href="http://www.speedrun.com/iwbtgfg" target="_blank">speedrun fangames</a>. And the main website which indexes most of the 5000+ fangames is <a href="http://delicious-fruit.com/" target="_blank">Delicious Fruit</a>.
+        </p>
 
-        $(document).ready(function(){
-          var time = 6000;
-          setTimeout(function(){setInterval('topImageUpdate(document.getElementById("top1"))', time);}, time/3);
-          setTimeout('topImageUpdate(document.getElementById("top1"))', time/3.0);
+        <div class="top-image-container">
+          <div class="top-image" id="top1"></div>
+          <div class="top-image" id="top2"></div>
+          <div class="top-image" id="top3"></div>
+          <div style="clear: both;"></div>
+        </div>
+        <script>
+          // http://stackoverflow.com/questions/10062811/can-i-set-the-height-of-a-div-based-on-a-percentage-based-width
+          $(window).ready(updateHeight);
+          $(window).resize(updateHeight);
+          function updateHeight() {
+              var div = $('.top-image');
+              var width = div.width();
+              div.css('height', width * (608/800));
+          }
 
-          setTimeout(function(){setInterval('topImageUpdate(document.getElementById("top2"))', time);}, 2*time/3);
-          setTimeout('topImageUpdate(document.getElementById("top2"))', 2*time/3.0);
+          createImage(document.getElementById("top1"));
+          createImage(document.getElementById("top2"));
+          createImage(document.getElementById("top3"));
 
-          setTimeout(function(){setInterval('topImageUpdate(document.getElementById("top3"))', time);}, 3*time/3);
-          setTimeout('topImageUpdate(document.getElementById("top3"))', 3*time/3.0);
-        })
-      </script>
+          $(document).ready(function(){
+            var time = 6000;
+            setTimeout(function(){setInterval('topImageUpdate(document.getElementById("top1"))', time);}, time/3);
+            setTimeout('topImageUpdate(document.getElementById("top1"))', time/3.0);
 
-      <h2>How can I get connected with the community?</h2>
-      <ul>
-        <li>Follow the <a href="https://www.twitch.tv/directory/game/I%20Wanna%20Be%20The%20Guy" target="_blank">Twitch IWBTG directory</a> and enjoy 24/7 fangame streams! Also check out our <a href="http://www.twitch.tv/team/thewannabes" target="_blank">Twitch team</a>!</li>
-        <li>Join the <a href="TODOTODOTODO" target="_blank">Fangame Newcomers Discord</a>! Also join Discords of your favorite fangame Twitch streamers!</li>
-        <li>Register and discuss on <a href="http://www.iwannacommunity.com/forum/index.php" target="_blank">our forums</a>! They're a little slow but definitely active.</li>
-        <li>Browse <a href="http://delicious-fruit.com/" target="_blank">Delicious Fruit</a> and review fangames you've played!</li>
-      </ul>
+            setTimeout(function(){setInterval('topImageUpdate(document.getElementById("top2"))', time);}, 2*time/3);
+            setTimeout('topImageUpdate(document.getElementById("top2"))', 2*time/3.0);
 
-      <h2>Which fangames should I play?</h2>
-      <p>
-      1. Check this list of some beginner fangames:
-      <ul style="columns:4">
-        <li><a href="" target="_blank">Game name</a></li>
-        <li><a href="" target="_blank">Game name</a></li>
-        <li><a href="" target="_blank">Game name</a></li>
-        <li><a href="" target="_blank">Game name</a></li>
-        <li><a href="" target="_blank">Game name</a></li>
-        <li><a href="" target="_blank">Game name</a></li>
-        <li><a href="" target="_blank">Game name</a></li>
-        <li><a href="" target="_blank">Game name</a></li>
-        <li><a href="" target="_blank">Game name</a></li>
-        <li><a href="" target="_blank">Game name</a></li>
-        <li><a href="" target="_blank">Game name</a></li>
-      </ul>
-      2. Search by rating, difficulty, tags, and more on <a href="http://delicious-fruit.com/" target="_blank">Delicious Fruit</a>.
-      <br>
-      3. Check out curated lists by <a href="http://www.tinyurl.com/geezerslist" target="_blank">Geezer</a>, <a href="http://tinyurl.com/lgeymuu" target="_blank">Sunbla & Zero</a>,  <a href="http://www.iwannacommunity.com/forum/index.php?topic=199.0" target="_blank">Paragus</a>, <a href="https://docs.google.com/spreadsheet/ccc?key=0Ai5kGaEf_4pidE5NNklnR2VPMUZEbklDeGNldnRGQmc&usp=sharing" target="_blank">Denferok</a>.
-      <p>
+            setTimeout(function(){setInterval('topImageUpdate(document.getElementById("top3"))', time);}, 3*time/3);
+            setTimeout('topImageUpdate(document.getElementById("top3"))', 3*time/3.0);
+          })
+        </script>
+
+        <h2>How can I get connected with the community?</h2>
+        <ul>
+          <li>Follow the <a href="https://www.twitch.tv/directory/game/I%20Wanna%20Be%20The%20Guy" target="_blank">Twitch IWBTG directory</a> and enjoy 24/7 fangame streams! Also check out our <a href="http://www.twitch.tv/team/thewannabes" target="_blank">Twitch team</a>!</li>
+          <li>Join the <a href="TODOTODOTODO" target="_blank">Fangame Newcomers Discord</a>! Also join Discords of your favorite fangame Twitch streamers!</li>
+          <li>Register and discuss on <a href="http://www.iwannacommunity.com/forum/index.php" target="_blank">our forums</a>! They're a little slow but definitely active.</li>
+          <li>Browse <a href="http://delicious-fruit.com/" target="_blank">Delicious Fruit</a> and review fangames you've played!</li>
+        </ul>
+
+        <h2>Which fangames should I play?</h2>
+        <p>
+        1. Check this list of some beginner fangames:
+        <ul style="columns:4">
+          <li><a href="" target="_blank">Game name</a></li>
+          <li><a href="" target="_blank">Game name</a></li>
+          <li><a href="" target="_blank">Game name</a></li>
+          <li><a href="" target="_blank">Game name</a></li>
+          <li><a href="" target="_blank">Game name</a></li>
+          <li><a href="" target="_blank">Game name</a></li>
+          <li><a href="" target="_blank">Game name</a></li>
+          <li><a href="" target="_blank">Game name</a></li>
+          <li><a href="" target="_blank">Game name</a></li>
+          <li><a href="" target="_blank">Game name</a></li>
+          <li><a href="" target="_blank">Game name</a></li>
+        </ul>
+        2. Search by rating, difficulty, tags, and more on <a href="http://delicious-fruit.com/" target="_blank">Delicious Fruit</a>.
+        <br>
+        3. Check out curated lists by <a href="http://www.tinyurl.com/geezerslist" target="_blank">Geezer</a>, <a href="http://tinyurl.com/lgeymuu" target="_blank">Sunbla & Zero</a>,  <a href="http://www.iwannacommunity.com/forum/index.php?topic=199.0" target="_blank">Paragus</a>, <a href="https://docs.google.com/spreadsheet/ccc?key=0Ai5kGaEf_4pidE5NNklnR2VPMUZEbklDeGNldnRGQmc&usp=sharing" target="_blank">Denferok</a>.
+        <p>
 
 
-      <h2>What is making fangames like?</h2>
-      <p>
-      The other side of the community is <i>making</i> fangames! It's open to everyone, and can be very fun and rewarding. There's lots of potential for new design ideas, there are many talented fangame creators to give help and collaborate with, and your game is guaranteed playtime on Twitch!
-      </p>
-      <p>
-      If you want to jump in, check out <a href="http://klazen.com/IWBTG/tutorial/dev_tutorial.html" target="_blank">Klazen's Tutorial</a>. We're also happy to help on the community discord and the forums.
-      </p>
+        <h2>What is making fangames like?</h2>
+        <p>
+        The other side of the community is <i>making</i> fangames! It's open to everyone, and can be very fun and rewarding. There's lots of potential for new design ideas, there are many veteran fangame creators to get help from and collaborate with, and your game is guaranteed playtime on Twitch!
+        </p>
+        <p>
+        If you want to jump in, check out <a href="http://klazen.com/IWBTG/tutorial/dev_tutorial.html" target="_blank">Klazen's Tutorial</a>. We're also happy to help on the community discord and the forums.
+        </p>
 
-      <h2>I want to know more about fangames!</h2>
-      <p>
-      This all started in 2007 when Kayin made the original <a href="http://kayin.moe/iwbtg/", target="_blank">I Wanna Be The Guy</a>, which was full of references, traps, and humor. In the years since then, people made fangames that riffed on IWBTG's ideas and improved the player physics. Gradually fangames evolved into a phenomemon that's seperate from the original, with their own subgeneres, tropes, and inside jokes.
-      </p>
-      <p>
-      Could put more FAQ-type stuff here. Suggestions plz. Maybe about the Japanese and other communities.
-      </p>
-      <p>
-      annual marathon, free, not very gpu-intensive, many computers can run it, default controls (shifts, Z, R, Escape)
-      </p>
+        <h2>I want to know more about fangames!</h2>
+        <p>
+        This all started in 2007 when Kayin made the original <a href="http://kayin.moe/iwbtg/", target="_blank">I Wanna Be The Guy</a>, which was full of references, traps, and humor. In the years since then, people made fangames that riffed on IWBTG's ideas and improved the player physics. Gradually fangames evolved into a phenomemon that's seperate from the original, with their own subgeneres, tropes, and inside jokes.
+        </p>
+        <p>
+        Could put more FAQ-type stuff here. Suggestions plz. Maybe about the Japanese and other communities.
+        </p>
+        <p>
+        annual marathon, free, not very gpu-intensive, many computers can run it, default controls (shifts, Z, R, Escape), dev collaborations and events open to everyone (spook jam, contests)
+        </p>
 
+      </div>
       <div id="footer">
-        This page is written by <a href="https://www.twitch.tv/patrickgh3" target="_blank">Patrickgh3</a>
+        Design and content ©  <a href="https://www.twitch.tv/patrickgh3" target="_blank">Patrickgh3</a> 2016.
         <br>
         <script>
           document.write("Last modified on "+document.lastModified);
