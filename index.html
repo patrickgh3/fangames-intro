@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Introduction to Fangames</title>
+    <title>Fangames Introduction</title>
     <!--<meta name="description" content="TODOTODOTODO"/>-->
     <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
     <meta charset="UTF-8">
@@ -22,21 +22,21 @@
     </head>
   <body>
     <div id="wrapper">
-      <h1>Introduction to Fangames (WIP)</h1>
-      <p>This is a WIP, don't share the link plz</p>
+      <h1><img id="title-image" src="images/icon_big.png"/>Fangames Introduction</h1>
 
       <p>
-      Fangames (a.k.a. "Guy games" or "I Wanna" games) are a niche genre of freeware platformers. Based on tight physics and instant respawns at their core, fangames have evolved into many genres including action adventure, intricate "needle" platforming, bullet-hell-esque "avoidance", puzzle, humorous traps, atmospheric, and more. They are made by people all over the world, and have a lot of charm that's hard to explain.
+      Fangames (a.k.a. "Guy games" or "I Wanna" games) are a niche genre of freeware platformers. Based on tight physics and instant respawns at their core, fangames have evolved far past the original IWBTG into their own phenomenon with subgenres and a passionate, growing community.
       </p>
       <p>
-      We are active 24 hours a day on the <a href="https://www.twitch.tv/directory/game/I%20Wanna%20Be%20The%20Guy", target="_blank">Twitch IWBTG directory</a>, which is a cornerstone of our community. We also <a href="http://www.speedrun.com/iwbtgfg" target="_blank">speedrun fangames</a>. And the main website which indexes most of the 5000+ fangames is <a href="http://delicious-fruit.com/" target="_blank">Delicious Fruit</a>.
+      Our community plays and chats about fangames 24 hours a day on the <a href="https://www.twitch.tv/directory/game/I%20Wanna%20Be%20The%20Guy", target="_blank">Twitch IWBTG directory</a>. We also <a href="http://www.speedrun.com/iwbtgfg" target="_blank">speedrun fangames</a>. And the main website which indexes most of the 5000+ fangames is <a href="http://delicious-fruit.com/" target="_blank">Delicious Fruit</a>.
       </p>
 
-      <br>
-      <div class="top-image" id="top1"></div>
-      <div class="top-image" id="top2"></div>
-      <div class="top-image" id="top3"></div>
-      <div style="clear: both;"></div>
+      <div class="top-image-container">
+        <div class="top-image" id="top1"></div>
+        <div class="top-image" id="top2"></div>
+        <div class="top-image" id="top3"></div>
+        <div style="clear: both;"></div>
+      </div>
       <script>
         // http://stackoverflow.com/questions/10062811/can-i-set-the-height-of-a-div-based-on-a-percentage-based-width
         $(window).ready(updateHeight);
@@ -66,7 +66,7 @@
 
       <h2>How can I get connected with the community?</h2>
       <ul>
-        <li>Follow <a href="https://www.twitch.tv/directory/game/I%20Wanna%20Be%20The%20Guy" target="_blank">IWBTG on Twitch</a> and enjoy 24/7 fangame streams! Also check out our <a href="http://www.twitch.tv/team/thewannabes" target="_blank">Twitch team</a>!</li>
+        <li>Follow the <a href="https://www.twitch.tv/directory/game/I%20Wanna%20Be%20The%20Guy" target="_blank">Twitch IWBTG directory</a> and enjoy 24/7 fangame streams! Also check out our <a href="http://www.twitch.tv/team/thewannabes" target="_blank">Twitch team</a>!</li>
         <li>Join the <a href="TODOTODOTODO" target="_blank">Fangame Newcomers Discord</a>! Also join Discords of your favorite fangame Twitch streamers!</li>
         <li>Register and discuss on <a href="http://www.iwannacommunity.com/forum/index.php" target="_blank">our forums</a>! They're a little slow but definitely active.</li>
         <li>Browse <a href="http://delicious-fruit.com/" target="_blank">Delicious Fruit</a> and review fangames you've played!</li>
@@ -114,10 +114,10 @@
       </p>
 
       <div id="footer">
-        Made by <a href="https://www.twitch.tv/patrickgh3" target="_blank">Patrick</a>
+        This page is written by <a href="https://www.twitch.tv/patrickgh3" target="_blank">Patrickgh3</a>
         <br>
         <script>
-          document.write("Last modified "+document.lastModified);
+          document.write("Last modified on "+document.lastModified);
         </script>
       </div>
 
@@ -125,7 +125,7 @@
 
     <script>
       if (mobilecheck()) {
-        $('#wrapper').css('width', '92%');
+        $('#wrapper').css('width', '100%');
         $('#wrapper').css('margin', '0');
         $('#wrapper').css('padding', '4%');
       }
