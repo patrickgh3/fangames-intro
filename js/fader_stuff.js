@@ -37,9 +37,11 @@ cycleDuration = 6000;
 
 function initImage(top_elt, timerOffset) {
     var active_img = document.createElement("img");
-    active_img.setAttribute("class", "active")
+    active_img.setAttribute("class", "active");
+    active_img.setAttribute("alt", "Cycling fangame screenshot");
     var inactive_img = document.createElement("img");
-    inactive_img.setAttribute("class", "inactive")
+    inactive_img.setAttribute("class", "inactive");
+    inactive_img.setAttribute("alt", "Cycling fangame screenshot");
 
     var i = getNewImage();
     used_images.push(i)
