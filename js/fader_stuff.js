@@ -32,8 +32,10 @@ home_images = [
 ];
 
 used_images = [];
+fadeDuration = 1500;
+cycleDuration = 6000;
 
-function createImage(top_elt) {
+function initImage(top_elt, timerOffset) {
     var active_img = document.createElement("img");
     active_img.setAttribute("class", "active")
     var inactive_img = document.createElement("img");
@@ -45,6 +47,14 @@ function createImage(top_elt) {
 
     top_elt.appendChild(active_img);
     top_elt.appendChild(inactive_img);
+
+    setTimeout(
+        function() {
+            var updateImgCallback = function(){topImageUpdate(top_elt)};
+            updateImgCallback();
+            setInterval(updateImgCallback, cycleDuration);
+        }, cycleDuration * timerOffset / 3
+    );
 }
 
 function topImageUpdate(top_elt) {
@@ -57,7 +67,9 @@ function topImageUpdate(top_elt) {
     $active.attr("src", i);
 
     $active.hide();
-    $active.fadeIn(1500, function(){removeImageFromUsed($inactive.attr("src"))});
+    $active.fadeIn(fadeDuration, function() {
+        removeImageFromUsed($inactive.attr("src"))
+    });
 }
 
 function getNewImage() {
