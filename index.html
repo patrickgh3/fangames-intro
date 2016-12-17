@@ -62,7 +62,7 @@
 
         <h2>What is making fangames like?</h2>
         <p>The other side of the community is <i>making</i> fangames! It's open to everyone, and can be very fun and rewarding. There's lots of potential for new design ideas, there are many veteran fangame creators to get help from and collaborate with, and your game is guaranteed playtime on Twitch!</p>
-        <p>If you want to jump in, check out <a href="http://klazen.com/IWBTG/tutorial/dev_tutorial.html" target="_blank">Klazen's Tutorial</a>. We're also happy to help on the community discord and the forums.</p>
+        <p>If you want to jump in, check out <a href="http://klazen.com/IWBTG/tutorial/dev_tutorial.html" target="_blank">Klazen's Tutorial</a>. Don't hesitate to ask the community for help!</p>
 
         <div class="sprites-line">
           <img src="images/sprite_spike.png" alt="Spike sprite"/>
@@ -72,7 +72,7 @@
 
         <h2>I want to know more about fangames!</h2>
         <p>All fangames are free to download and play! They're also not GPU-intensive, so older computers can run them just fine. The default controls are, by tradition, Shift to jump, Z to shoot, R to respawn, and Escape to quit.</p>
-        <p>A little backstory: In 2007, Kayin made the original <a href="http://kayin.moe/iwbtg/" target="_blank">I Wanna Be The Guy</a>, which was full of references, traps, and humor. A few people made fangames in GameMaker which closely followed its formula. Over the years more and more people joined in, from many countries and especially Japan. Fangame design strayed from the original formula and evolved its own tropes and genres, with more than 5000 games made to date.</p>
+        <p>A little backstory: In 2007, Kayin made the original <a href="http://kayin.moe/iwbtg/" target="_blank">I Wanna Be The Guy</a>, which was full of humor and traps. At first, fangames of IWBTG closely followed its formula, but over the years their design evolved far beyond it. Today, fangames are an ecosystem of their own, with their own tropes and genres, and with authors and players from around the globe.</p>
         <p>Fangames gradually became popular on Twitch simply because they're entertaining to watch. Speedrunning in particular is popular, with games like <a href="http://www.speedrun.com/iwbtboshy" target="_blank">Boshy</a>, <a href="http://www.speedrun.com/iwktkamilia2" target="_blank">Kamilia 2</a>, <a href="http://www.speedrun.com/nang" target="_blank">NANG</a> (featured in AGDQ 2017!), and many more. As a community we also host an annual weekend-long <a href="https://www.twitch.tv/fangamemarathon" target="_blank">Speedrun Marathon</a> on Twitch.</p>
 
         <div class="sprites-line">
@@ -112,15 +112,6 @@
 
     <script src="js/fader_stuff.js"></script>
     <script>
-      // http://stackoverflow.com/questions/10062811/can-i-set-the-height-of-a-div-based-on-a-percentage-based-width
-      function updateHeight() {
-          var div = $('.fader');
-          var width = div.width();
-          div.css('height', width * (608/800));
-      }
-      $(window).ready(updateHeight);
-      $(window).resize(updateHeight);
-
       initImage(document.getElementById("fader1"), 1);
       initImage(document.getElementById("fader2"), 2);
       initImage(document.getElementById("fader3"), 3);

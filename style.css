@@ -109,7 +109,7 @@ a {
 
 .sprites-line {
   text-align: center;
-  padding-top: 1em;
+  padding-top: 1.25em;
 }
 
     .sprites-line img + img {
@@ -127,6 +127,7 @@ a {
       position: relative;
       width: 33.33%;
       float: left;
+      height: 203px;
     }
 
     .fader-container .fader:nth-child(3) {
