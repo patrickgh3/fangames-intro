@@ -24,12 +24,12 @@ $from = 'automated@cwpat.me';
 $to = 'patrickjtraynor@gmail.com';
 $subject = 'Fangames intro feedback ' . date('Y-m-d');
 $content = "<html><body>Feedback: $feedback"
-        +"<br><br>Contact: $contact</body></html>";
+        . "<br><br>Contact: $contact</body></html>";
 $sendResult = $client->sendEmail($from, $to, $subject, $content);
 
 // Check if email sent successfully or not
 if ($sendResult) {
-    echo "Thanks!";
+    echo "Submitted. Thanks!";
 }
 else {
     header('HTTP/1.1 500 Internal Server Error');
