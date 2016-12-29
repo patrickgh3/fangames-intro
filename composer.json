@@ -1,5 +1,0 @@
-{
-    "require": {
-        "wildbit/postmark-php": "^2.3"
-    }
-}
