@@ -4,17 +4,81 @@
 }
 
 body {
-  background-color: #333;
   font-family: "Helvetica Neue", "Calibri Light", Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   letter-spacing: 0.01em;
+
+  background-color: #333;
 }
 
 p {
   font-size: 1.25em;
   line-height: 1.25em;
 }
+
+p + p {
+  margin-top: 1.25em;
+}
+
+h1 {
+  font-size: 3em;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 2em;
+  margin-top: 1.5em;
+  margin-bottom: 0.25em;
+}
+
+ul {
+  list-style: inside;
+}
+
+a {
+  color: #4078cf;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color .1s linear;
+}
+
+    a:visited {
+      color: #9740CF;
+    }
+
+    a:hover {
+      color: #CF4078;
+    }
+
+form {
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+
+    textarea {
+      font: inherit;
+      padding: 0.2em;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    textarea[name="contact"] {
+      width: 100%;
+      height: 2em
+    }
+
+    textarea[name="feedback"] {
+      width: 100%;
+      min-height: 100px;
+    }
+
+    input[type="submit"] {
+      padding: 1px 6px;
+      font: inherit;
+    }
 
 #wrapper {
   display: block;
@@ -71,41 +135,6 @@ p {
       font-size: inherit;
     }
 
-h1 {
-  font-size: 3em;
-  margin: 0;
-  padding: 0;
-}
-
-h2 {
-  font-size: 2em;
-  margin-top: 1.5em;
-  margin-bottom: 0.25em;
-}
-
-p + p {
-  margin-top: 1.25em;
-}
-
-ul {
-  list-style: inside;
-}
-
-a {
-  color: #4078cf;
-  text-decoration: underline;
-  cursor: pointer;
-  transition: color .1s linear;
-}
-
-    a:visited {
-      color: #9740CF;
-    }
-
-    a:hover {
-      color: #CF4078;
-    }
-
 .sprites-line {
   text-align: center;
   padding-top: 1.25em;
@@ -149,4 +178,8 @@ a {
         .fader img.inactive {
           z-index: 1;
         }
+
+.clearboth {
+  clear: both;
+}
 

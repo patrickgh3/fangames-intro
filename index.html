@@ -24,7 +24,7 @@
           <div class="fader" id="fader2"></div>
           <div class="fader" id="fader3"></div>
         </div>
-        <div style="clear: both;"></div>
+        <div class="clearboth"></div>
 
         <h2>The basics</h2>
 
@@ -45,7 +45,7 @@
         <h2>Choosing which games to play</h2>
         <p>5000+ fangames gives players a lot of choice! Sometimes that's too much choice though. Here's a list of options to find the right fangame for you.</p>
         <p>
-          1. Visit the <a href="" target="_blank">Beginner Recommendations Page</a>!
+          1. Visit the <a href="" target="_blank">Beginner Recommendations Page</a>! (Just an idea, not made yet)
           <br>
           2. Check out curated lists by <a href="http://www.tinyurl.com/geezerslist" target="_blank">Geezer</a>, <a href="http://tinyurl.com/lgeymuu" target="_blank">Sunbla & Zero</a>,  <a href="http://www.iwannacommunity.com/forum/index.php?topic=199.0" target="_blank">Paragus</a>, <a href="https://docs.google.com/spreadsheet/ccc?key=0Ai5kGaEf_4pidE5NNklnR2VPMUZEbklDeGNldnRGQmc&usp=sharing" target="_blank">Denferok</a>.
           <br>
@@ -69,7 +69,15 @@
         <p>Fangames gradually became popular on Twitch simply because they're entertaining to watch. Speedrunning in particular is popular, with games like <a href="http://www.speedrun.com/iwbtboshy" target="_blank">Boshy</a>, <a href="http://www.speedrun.com/iwktkamilia2" target="_blank">Kamilia 2</a>, <a href="http://www.speedrun.com/nang" target="_blank">NANG</a> (featured in AGDQ 2017!), and many more. As a community we also host an annual weekend-long <a href="https://www.twitch.tv/fangamemarathon" target="_blank">Speedrun Marathon</a> on Twitch.</p>
 
         <h2>In closing</h2>
-        <p>Hopefully you now have an idea of what fangames are, and how to connect with our community! If you have any lingering questions, or if something was confusing, please tell me since I'd like to make this page as good as it can be! TODO: contact form here</p>
+        <p>Hopefully you now have an idea of what fangames are, and how to connect with our community! If you have any lingering questions, or if something was confusing, please tell me since I'd like to make this page as good as it can be! Just write in this form and hit submit.</p>
+        <form id="feedbackForm" onsubmit="return doFeedbackRequest()">
+          Feedback:
+          <textarea id="feedbackFormFeedback" name="feedback"></textarea>
+          Best way to contact you: (Optional)
+          <textarea id="feedbackFormContact" name="contact"></textarea>
+          <input type="submit" value="Submit feedback">
+          <span id="feedbackFormResultText"></span>
+        </form>
         
       </div>
 
@@ -80,8 +88,7 @@
       </nav>-->
 
       <div id="footer">
-        Design and content ©  Patrickgh3 2016 <a href="https://www.twitch.tv/patrickgh3" target="_blank">Contact</a>
-      </div>
+        Design and content ©  <a href="https://www.twitch.tv/patrickgh3" target="_blank">Patrickgh3</a> 2016</div>
 
     </div><!-- id=wrapper -->
 
@@ -108,6 +115,8 @@
       initImage(document.getElementById("fader2"), 2);
       initImage(document.getElementById("fader3"), 3);
     </script>
+
+    <script src="js/feedback.js"></script>
 
   </body>
 </html>
