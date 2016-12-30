@@ -1,184 +1,36 @@
-* {
-  margin: 0;
-  padding: 0;
-}
 
+
+/* Globals */
+* { margin: 0; padding: 0; }
 body {
-  font-family: "Helvetica Neue", "Calibri Light", Roboto, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  letter-spacing: 0.01em;
-  background-color: #333;
+    font-family: "Helvetica Neue", "Calibri Light", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; letter-spacing: 0.01em;
+    background-color: #333;
 }
 
-p {
-  font-size: 1.25em;
-  line-height: 1.25em;
-}
+/* Structure */
+#wrapper { background-color: #FFF; margin: 0 auto; width: 800px; }
 
-p + p {
-  margin-top: 1.25em;
-}
+#header { padding: 1em 1.5em 0.5em; }
+    h1 { font-size: 3em; }
 
-h1 {
-  font-size: 3em;
-  margin: 0;
-  padding: 0;
-}
+#content { padding: 0 1.5em 1.5em; }
+    h2 { font-size: 2em; margin: 1.5em 0 0.25em; }
+    p { font-size: 1.25em; line-height: 1.25em; }
+        p + p {margin-top: 1.25em;}
+    a { color: #4078cf; transition: color .1s linear; }
+        a:visited {color: #9740CF;}
+        a:hover {color: #CF4078;}
 
-h2 {
-  font-size: 2em;
-  margin-top: 1.5em;
-  margin-bottom: 0.25em;
-}
+    .fader-container { margin: 2.5em -1.5em; width: calc(100% + 3em); }
+        .fader { float: left; height: 203px; position: relative; width: 33.33%; }
+        .fader:nth-child(3) { float: none; overflow: hidden; width: auto; }
+            .fader img { height: 100%; position: absolute; width: 100%; }
+                .fader img.active {z-index: 2;}
+                .fader img.inactive {z-index: 1;}
 
-ul {
-  list-style: inside;
-}
+    .sprites-line { margin: 1.25em 0 0; text-align: center; }
+        .sprites-line img + img {margin: 0 0 0 4em;}
 
-a {
-  color: #4078cf;
-  text-decoration: underline;
-  cursor: pointer;
-  transition: color .1s linear;
-}
-
-    a:visited {
-      color: #9740CF;
-    }
-
-    a:hover {
-      color: #CF4078;
-    }
-
-form {
-  padding-top: 2em;
-  padding-bottom: 1em;
-}
-
-    textarea {
-      font: inherit;
-      padding: 0.2em;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
-    }
-
-    textarea[name="contact"] {
-      width: 100%;
-      height: 2em
-    }
-
-    textarea[name="feedback"] {
-      width: 100%;
-      min-height: 100px;
-    }
-
-    input[type="submit"] {
-      padding: 1px 6px;
-      font: inherit;
-    }
-
-#wrapper {
-  display: block;
-  width: 800px;
-  min-height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 0;
-  padding-bottom: 0;
-  background-color: #FFF;
-}
-
-#header {
-  padding-left: 1.5em;
-  padding-right: 1.5em;
-  padding-top: 1em;
-  padding-bottom: 0.5em;
-}
-
-    nav {
-      padding-top: 0.75em;
-    }
-
-        nav a {
-          background-color: #333;
-          color: #eee;
-          padding: 0.3em;
-          border-radius: 4px;
-          text-decoration: none;
-        }
-
-        nav a:hover {
-          color: #eee;
-          background-color: #555;
-        }
-
-        nav a:visited {
-          color: #eee;
-        }
-
-#content {
-  padding: 1.5em;
-  padding-top: 0;
-}
-
-#footer {
-  background-color: #E9E9E9;
-  font-size: 1em;
-  border-top: 1px solid black;
-  padding: 0.5em;
-}
-
-    #footer a {
-      font-size: inherit;
-    }
-
-.sprites-line {
-  text-align: center;
-  padding-top: 1.25em;
-}
-
-    .sprites-line img + img {
-      margin-left: 4em;
-    }
-
-.fader-container {
-  width: calc(100% + 3em);
-  padding-top: 2.5em;
-  margin-left: -1.5em;
-  margin-right: -1.5em;
-}
-
-    .fader {
-      position: relative;
-      width: 33.33%;
-      float: left;
-      height: 203px;
-    }
-
-    .fader-container .fader:nth-child(3) {
-      width: auto;
-      overflow: hidden;
-      float: none;
-    }
-
-        .fader img {
-          position: absolute;
-          display: block;
-          width: 100%;
-          height: 100%;
-        }
-
-        .fader img.active {
-          z-index: 2;
-        }
-
-        .fader img.inactive {
-          z-index: 1;
-        }
-
-.clearboth {
-  clear: both;
-}
+#footer { background-color: #E9E9E9; border-top: 1px solid black; padding: 0.5em; }
 
