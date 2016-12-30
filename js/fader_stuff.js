@@ -1,3 +1,12 @@
+// Controls periodically fading unique images
+
+// Init all images in our document
+function main() {
+    initImage(document.getElementById("fader1"), 1);
+    initImage(document.getElementById("fader2"), 2);
+    initImage(document.getElementById("fader3"), 3);
+}
+
 home_images = [
  "images/screenshots/crimson.png"
 ,"images/screenshots/destiny.png"
@@ -31,8 +40,8 @@ home_images = [
 ];
 
 used_images = [];
-fadeDuration = 1500;
-cycleDuration = 6000;
+fadeDuration = 1500;  // Length of fade transition
+cycleDuration = 6000; // Wait time between transitions
 
 function initImage(top_elt, timerOffset) {
     var active_img = document.createElement("img");
@@ -84,3 +93,6 @@ function getNewImage() {
 function removeImageFromUsed(image) {
     used_images.splice(used_images.indexOf(image), 1);
 }
+
+main();
+

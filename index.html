@@ -1,9 +1,33 @@
 <!DOCTYPE html>
+<!--        A picture of the kid, ready for adventure!
+
+                          MMMMMMMMMMMMMMMMMM                    
+                        MMMM::::::::::::::MM                    
+                      MMMM::::::::::::::::::MM                  
+                      MM::::::::          ::MM                  
+                    MMMM::::::    MM  MM  MMMM                  
+                    MM::::::::    MM  MM  MM                    
+                    MM::::::              MM                    
+                      MMMM::  MMMMMMMMMM  MM                    
+                      ::MMMM    MMMMMMMM  MM                    
+                    ::MMMMMMMM          MMMMMMMMMMMMMM          
+                  ::MMMMssssMMMMMMMMMMMMMMMMMMMMMMMMMM          
+              ::::MMssssssMMMMss    ssMMMMMMMMMM                
+      //::::::::MMssssMMMMssssssssssssMMMM    MM                
+        //::::MM  ssMMMMMMssssssssssssMM    MMMM                
+          //MM    MMMMddMMMMMMMMMMMMMMMMMMMMMM                  
+          MMMM    MMddddddMM..........MM                        
+            MMMMMMddddddddMMMM......MMMM                        
+                  dddddddd  MMMMMMMMMM                          
+                    MMMMMMMM        MMMMMMMM                    
+                  MMMMMMMMMMMM    MMMMMMMMMMMM                  
+                  yyyyyyyyyyyy    yyyyyyyyyyyy                  -->
 <html lang="en">
   <head>
     <title>Overview of Fangames</title>
-    <meta name="description" content="An overview of the IWBTG fangame community."/>
-    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+    <meta charset="UTF-8">
+    <meta name="description" content="An overview of the fangame community for newcomers. Fangames, also known as Guy or I Wanna games, are a niche genre of freeware platformer games."/>
+    <meta name="author" content="Patrickgh3">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="images/favicon.png">
@@ -17,17 +41,16 @@
 
       <div id="content">
         <p>Fangames, also known as Guy or I Wanna games, are a niche genre of freeware platformer games. Whether you know of some popular fangames like NANG, Boshy, or Kamilia 3, or if you're totally new, this page will hopefully give you a quick overview of what the fangame community is all about!</p>
-        <p>Check out some screenshots!</p>
+        <p>Check out some game screenshots!</p>
 
         <div class="fader-container">
           <div class="fader" id="fader1"></div>
           <div class="fader" id="fader2"></div>
           <div class="fader" id="fader3"></div>
+          <div class="clearboth"></div>
         </div>
-        <div class="clearboth"></div>
 
         <h2>The basics</h2>
-
         <p>Fangames are all based on the same super-tight player physics, a double jump, and instant and infinite respawns when you die. There are many genres that all share this common ground, including action-adventure, intricate platforming, bullet hell, medleys of other fangames, and more.</p>
          <p>All fangames are free to download and play! They're also not GPU-intensive, so older computers can run them just fine. The default controls are, by tradition, Shift to jump, Z to shoot, R to respawn, and Escape to quit.</p>
          <p>Our community plays and chats about fangames 24 hours a day on the <a href="https://www.twitch.tv/directory/game/I%20Wanna%20Be%20The%20Guy" target="_blank">Twitch IWBTG directory</a>. Speedrunning fangames is popular, and we track records on our <a href="http://www.speedrun.com/iwbtgfg" target="_blank">Speedrun.com page</a>. And last but not least, our main website which indexes most of the 5000+ fangames is <a href="http://delicious-fruit.com/" target="_blank">Delicious Fruit</a>.</p>
@@ -61,30 +84,30 @@
         <div class="sprites-line">
           <img src="images/gzaF.png" alt="gzaF Twitch emote"/>
           <img src="images/paraKid.png" alt="paraKid Twitch emote"/>
-          <img src="images/yoyoYo.png" onmouseover="this.src='images/cornBlack.png';" onmouseout="this.src='images/yoyoYo.png';" alt="yoyoYo Twitch emote"/>
+          <img src="images/yoyoYo.png" onClick="toggleEmote(this)" alt="yoyoYo Twitch emote"/>
         </div>
 
         <h2>A little backstory</h2>
-        <p>Fangame history begins in 2007 when Kayin made the original <a href="http://kayin.moe/iwbtg/" target="_blank">I Wanna Be The Guy</a>, a game full of humor and challenge. At first, fangames of IWBTG closely followed its formula of humorous traps and pop references, but over the years their design evolved far beyond it. Today, fangames are an ecosystem of their own, with their own tropes and genres, and with authors and players from around the globe.</p>
-        <p>Fangames gradually became popular on Twitch simply because they're entertaining to watch. Speedrunning in particular is popular, with games like <a href="http://www.speedrun.com/iwbtboshy" target="_blank">Boshy</a>, <a href="http://www.speedrun.com/iwktkamilia2" target="_blank">Kamilia 2</a>, <a href="http://www.speedrun.com/nang" target="_blank">NANG</a> (featured in AGDQ 2017!), and many more. As a community we also host an annual weekend-long <a href="https://www.twitch.tv/fangamemarathon" target="_blank">Speedrun Marathon</a> on Twitch.</p>
+        <p>Fangame history begins in 2007 when Kayin made the original <a href="http://kayin.moe/iwbtg/" target="_blank">I Wanna Be The Guy</a>, a game full of humor and challenge. At first, fangames of IWBTG closely imitated its formula of humorous traps and pop references. But over the years, their design gradually evolved into something else entirely. Today, fangames are an ecosystem of their own, with their own tropes and genres, and with authors and players from around the globe.</p>
+        <p>Fangames gradually became popular on Twitch simply because they're entertaining to watch. Speedrunning in particular is popular, with games like <a href="http://www.speedrun.com/iwbtboshy" target="_blank">Boshy</a> (featured in many an AGDQ!), <a href="http://www.speedrun.com/iwktkamilia2" target="_blank">Kamilia 2</a>, <a href="http://www.speedrun.com/nang" target="_blank">NANG</a> (featured in AGDQ 2017!), and many more. As a community we also host an annual weekend-long <a href="https://www.twitch.tv/fangamemarathon" target="_blank">Speedrun Marathon</a> on Twitch.</p>
 
         <h2>In closing</h2>
         <p>Hopefully you now have an idea of what fangames are, and how to connect with our community! If you have any lingering questions, or if something was confusing, please tell me since I'd like to make this page as good as it can be! I'm Patrick no. 0303 on Discord and Clockworkpat on Twitter.</p>
        
       </div>
-
-      <!--<nav>
-        <a href="http://www.iwannacommunity.com/forum/index.php" target="_blank">I Wanna Community Forums</a>
-        <a href="http://delicious-fruit.com/index.php" target="_blank">Delicious-Fruit.com</a>
-        <a href="http://klazen.com/IWBTG/tutorial/dev_tutorial.html" target="_blank">Fangame Dev Tutorial</a>
-      </nav>-->
-
+      
       <div id="footer">
-        Design and content ©  <a href="https://www.twitch.tv/patrickgh3" target="_blank">Patrickgh3</a> 2016</div>
+        Design and content © <a href="https://www.twitter.com/clockworkpat" target="_blank">Patrickgh3</a> 2017
+      </div>
 
     </div><!-- id=wrapper -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/fader_stuff.js"></script>
+    <script src="js/detect_mobile_browser.js"></script>
+    <script src="js/toggleEmote.js"></script>
+
+    <!-- Google analytics -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -93,22 +116,6 @@
       ga('create', 'UA-78502940-1', 'auto');
         ga('send', 'pageview');
     </script>
-
-    <script src="js/detect_mobile_browser.js"></script>
-    <script>
-      if (mobilecheck()) {
-        $('#wrapper').css('width', '100%');
-      }
-    </script>
-
-    <script src="js/fader_stuff.js"></script>
-    <script>
-      initImage(document.getElementById("fader1"), 1);
-      initImage(document.getElementById("fader2"), 2);
-      initImage(document.getElementById("fader3"), 3);
-    </script>
-
-    <script src="js/feedback.js"></script>
 
   </body>
 </html>
