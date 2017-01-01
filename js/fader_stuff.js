@@ -1,13 +1,73 @@
-// Controls periodically fading unique images
+// Controls periodically fading unique images from a pool
 
-// Init all images in our document
 function main() {
     initImage(document.getElementById("fader1"), 1);
     initImage(document.getElementById("fader2"), 2);
     initImage(document.getElementById("fader3"), 3);
 }
 
-home_images = [
+function initImage(faderElt, timerOffset) {
+    // Register initial source as used
+    var active = faderElt.querySelector(".active");
+    usedSources.push(active.src);
+
+    // Start off timings
+    function initialFadeAndSetInterval() {
+        var startFadeSelf = function() {
+            startNewFade(faderElt);
+        };
+        startFadeSelf();
+        setInterval(startFadeSelf, cycleDuration);
+    }
+    setTimeout(initialFadeAndSetInterval, cycleDuration * timerOffset / 3);
+}
+
+// Starts a new transition of a fader
+function startNewFade(faderElt) {
+    // Grab image children and propagate new source
+    var active = faderElt.querySelector(".active");
+    var inactive = faderElt.querySelector(".inactive");
+    var newSrc = pickUnusedSource();
+    usedSources.push(newSrc);
+    inactive.src = active.src;
+    active.src = newSrc;
+
+    // Start fade in
+    active.style.display = "none";
+    fadeIn(active, fadeDuration, function() {
+        removeFromUsedSources(inactive.src);
+    });
+}
+
+// Returns random element of allSources that's not present in usedSources
+function pickUnusedSource() {
+    var index = -1;
+    var attemptsLeft = 20;
+    while (index == -1 || usedSources.indexOf(allSources[index]) != -1) {
+        index = Math.floor(Math.random() * allSources.length);
+        attemptsLeft -= 1;
+        if (attemptsLeft <= 0) break;
+    }
+    return allSources[index];
+}
+
+// Removes a source from usedSources which is contained in a given string.
+// e.g. remove("http://a.com/b/c.png") will remove "b/c.png"
+function removeFromUsedSources(toRemove) {
+    for (var i=0; i<usedSources.length; i++) {
+        if (toRemove.indexOf(usedSources[i]) != -1) {
+            usedSources.splice(i, 1);
+            break;
+        }
+    }
+}
+
+
+
+fadeDuration = 1500;  // Length of fade transition
+cycleDuration = 6000; // Wait time between transitions
+usedSources = [];
+allSources = [
  "images/screenshots/crimson.png"
 ,"images/screenshots/destiny.png"
 ,"images/screenshots/hurtfulpain.png"
@@ -38,61 +98,6 @@ home_images = [
 ,"images/screenshots/idk5.png"
 ,"images/screenshots/nang.png"
 ];
-
-used_images = [];
-fadeDuration = 1500;  // Length of fade transition
-cycleDuration = 6000; // Wait time between transitions
-
-function initImage(top_elt, timerOffset) {
-    var active_img = document.createElement("img");
-    active_img.setAttribute("class", "active");
-    active_img.setAttribute("alt", "Cycling fangame screenshot");
-    var inactive_img = document.createElement("img");
-    inactive_img.setAttribute("class", "inactive");
-    inactive_img.setAttribute("alt", "Cycling fangame screenshot");
-
-    var i = getNewImage();
-    used_images.push(i)
-    active_img.setAttribute("src", i);
-
-    top_elt.appendChild(active_img);
-    top_elt.appendChild(inactive_img);
-
-    setTimeout(
-        function() {
-            var updateImgCallback = function(){topImageUpdate(top_elt)};
-            updateImgCallback();
-            setInterval(updateImgCallback, cycleDuration);
-        }, cycleDuration * timerOffset / 3
-    );
-}
-
-function topImageUpdate(top_elt) {
-    var $active = $(top_elt).find(".active");
-    var $inactive = $(top_elt).find(".inactive");
-
-    $inactive.attr("src", $active.attr("src"));
-    var i = getNewImage();
-    used_images.push(i);
-    $active.attr("src", i);
-
-    $active.hide();
-    $active.fadeIn(fadeDuration, function() {
-        removeImageFromUsed($inactive.attr("src"))
-    });
-}
-
-function getNewImage() {
-    var index = -1;
-    while (index == -1 || used_images.indexOf(home_images[index]) != -1) {
-        index = Math.floor(Math.random() * home_images.length);
-    }
-    return home_images[index];
-}
-
-function removeImageFromUsed(image) {
-    used_images.splice(used_images.indexOf(image), 1);
-}
 
 main();
 

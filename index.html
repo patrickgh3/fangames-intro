@@ -29,7 +29,7 @@
     <meta name="description" content="An overview of the fangame community for newcomers. Fangames, also known as Guy or I Wanna games, are a niche genre of freeware platformer games."/>
     <meta name="author" content="Patrickgh3">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?asdf=1">
     <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
 
@@ -45,9 +45,18 @@
         <p>Check out some game screenshots!</p>
 
         <div class="fader-container">
-          <div class="fader" id="fader1"></div>
-          <div class="fader" id="fader2"></div>
-          <div class="fader" id="fader3"></div>
+          <div class="fader" id="fader1">
+            <img class="active" src="images/screenshots/orion.png" alt="Cycling fangame screenshot"/>
+            <img class="inactive"/>
+          </div>
+          <div class="fader" id="fader2">
+            <img class="active" src="images/screenshots/snowmagic.png" alt="Cycling fangame screenshot"/>
+            <img class="inactive"/>
+          </div>
+          <div class="fader" id="fader3">
+            <img class="active" src="images/screenshots/scribble.png" alt="Cycling fangame screenshot"/>
+            <img class="inactive"/>
+          </div>
         </div>
 
         <h2>The basics</h2>
@@ -102,7 +111,7 @@
 
     </div><!-- id=wrapper -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/fadeInOutVanilla.js"></script>
     <script src="js/fader_stuff.js"></script>
     <script src="js/detect_mobile_browser.js"></script>
     <script src="js/toggleEmote.js"></script>
