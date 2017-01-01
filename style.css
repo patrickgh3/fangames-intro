@@ -23,7 +23,7 @@ body {
         a:hover {color: #CF4078;}
 
     .fader-container { margin: 2.5em -1.5em; width: calc(100% + 3em); }
-        .fader { float: left; height: 203px; position: relative; width: 33.33%; }
+        .fader { float: left; padding-bottom: calc(33.33% * 19/25); position: relative; width: 33.33%; }
         .fader:nth-child(3) { float: none; overflow: hidden; width: auto; }
             .fader img { height: 100%; position: absolute; width: 100%; }
                 .fader img.active {z-index: 2;}

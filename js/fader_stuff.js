@@ -13,9 +13,7 @@ function initImage(faderElt, timerOffset) {
 
     // Start off timings
     function initialFadeAndSetInterval() {
-        var startFadeSelf = function() {
-            startNewFade(faderElt);
-        };
+        var startFadeSelf = function(){startNewFade(faderElt);};
         startFadeSelf();
         setInterval(startFadeSelf, cycleDuration);
     }
@@ -34,7 +32,7 @@ function startNewFade(faderElt) {
 
     // Start fade in
     active.style.display = "none";
-    fadeIn(active, fadeDuration, function() {
+    $(active).fadeIn(fadeDuration, function() {
         removeFromUsedSources(inactive.src);
     });
 }
@@ -42,35 +40,46 @@ function startNewFade(faderElt) {
 // Returns random element of allSources that's not present in usedSources
 function pickUnusedSource() {
     var index = -1;
+    var chosenSource = "";
     var attemptsLeft = 20;
-    while (index == -1 || usedSources.indexOf(allSources[index]) != -1) {
+    while (true) {
         index = Math.floor(Math.random() * allSources.length);
+        chosenSource = allSources[index];
+        if (indexOfStringPart(usedSources, chosenSource) == -1) {
+            break;
+        }
         attemptsLeft -= 1;
         if (attemptsLeft <= 0) break;
     }
-    return allSources[index];
+    return chosenSource;
 }
 
-// Removes a source from usedSources which is contained in a given string.
-// e.g. remove("http://a.com/b/c.png") will remove "b/c.png"
-function removeFromUsedSources(toRemove) {
-    for (var i=0; i<usedSources.length; i++) {
-        if (toRemove.indexOf(usedSources[i]) != -1) {
-            usedSources.splice(i, 1);
-            break;
+// Checks if a string is a substring or a superstring of any element
+// in a list, and returns the index, or -1 if none.
+// e.g. "http://a.com/b/c.png" and "b/c.png", or vice versa.
+function indexOfStringPart(list, val) {
+    for (var i=0; i<list.length; i++) {
+        if (val.indexOf(list[i]) != -1 || list[i].indexOf(val) != -1) {
+            return i;
         }
     }
+    return -1;
 }
 
-
+// Removes a string from usedSources which is either a substring or superstring
+// of a given string.
+function removeFromUsedSources(toRemove) {
+    var i = indexOfStringPart(usedSources, toRemove);
+    usedSources.splice(i, 1);
+}
 
 fadeDuration = 1500;  // Length of fade transition
 cycleDuration = 6000; // Wait time between transitions
 usedSources = [];
 allSources = [
- "images/screenshots/crimson.png"
-,"images/screenshots/destiny.png"
-,"images/screenshots/hurtfulpain.png"
+ "images/screenshots/destiny.png"
+,"images/screenshots/scribble.png"
+,"images/screenshots/snowmagic.png"
 ,"images/screenshots/orion.png"
 ,"images/screenshots/snowmagic.png"
 ,"images/screenshots/bread.png"
