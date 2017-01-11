@@ -29,7 +29,7 @@ body {
                 .fader img.active {z-index: 2;}
                 .fader img.inactive {z-index: 1;}
 
-    .sprites-line { margin: 1.25em 0 0; text-align: center; }
+    .sprites-line { margin: 1.5em 0 0; text-align: center; }
         .sprites-line img + img {margin: 0 0 0 4em;}
 
 #footer { background-color: #E9E9E9; border-top: 1px solid black; padding: 0.5em; }
