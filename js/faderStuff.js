@@ -106,6 +106,7 @@ allSources = [
 ,"images/screenshots/writtenchal.png"
 ,"images/screenshots/idk5.png"
 ,"images/screenshots/nang.png"
+,"images/screenshots/diminish.png"
 ];
 
 main();
