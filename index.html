@@ -1,13 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Overview of Fangames</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="An overview of the I Wanna Be The Guy fangame community for newcomers. Fangames, also known as Guy or I Wanna games, are a niche genre of freeware platformer games."/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css?asdf=6">
-    <link rel="icon" type="image/png" href="images/favicon.png">
-  </head>
 <!--        A picture of the kid, ready for adventure!
 
                           MMMMMMMMMMMMMMMMMM                    
@@ -31,19 +23,106 @@
                     MMMMMMMM        MMMMMMMM                    
                   MMMMMMMMMMMM    MMMMMMMMMMMM                  
                   yyyyyyyyyyyy    yyyyyyyyyyyy                  -->
+  <head>
+    <title>I Wanna Be The Guy Fangames</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="I Wanna Be The Guy Fangames are a niche genre of freeware platformer games based around a set of super-tight player physics and instant respawns when you die."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+* { margin: 0; padding: 0; }
+body {
+    font-family: "Helvetica Neue", "Calibri Light", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; letter-spacing: 0.01em;
+    color:white;
+    background-color: #175145;
+    background-image: linear-gradient(rgb(41, 113, 99), rgb(0, 32, 20));
+}
+
+#wrapper { background-color: rgba(0, 0, 0, 0.5); margin: 0 auto; max-width: 60em; }
+
+/*#header { padding: 0.5em 1.5em 1.5em; }*/
+#header { text-align:center; padding-bottom:1em; padding-top:1em; }
+#header img { display:inline-block; vertical-align:top; max-width:8em; }
+#header div { display:inline-block; }
+h1 { margin-top:2em; margin-left:1em; }
+/*.top-shortcut { text-align: right; }*/
+
+.link { margin:0; font-size:1.1em; }
+.link a { display:inline-block; color:white; background-color:black; padding:0.4em; text-decoration:none; margin-bottom:0.3em; margin-right:0.15em; }
+.link a:hover{ background-color:gray; color:white; }
+.link a:visited{ color:white; }
+.link img { max-width:1.4em; max-height:1.4em; display:inline-block; margin-right:0.25em; position:absolute; }
+.link a span { margin-left:2em; }
+.links { padding-bottom:2em; }
+
+a { color:white; }
+a:visited { color:white; }
+
+#content { padding-left:1.5em; padding-right:1.5em; }
+    h2 { font-size: 2em; margin-bottom:0.5em; /*margin-top:1.5em; margin-bottom:0.5em;*/ }
+    p { font-size: 1.1em; line-height: 1.25em; }
+        p + p {margin: 1.25em 0 0;}
+    /*a { color: #4078cf; transition: color .1s linear; }
+        a:visited {color: #9740CF;}
+        a:hover {color: #CF4078;}*/
+
+    .fader-container { margin: 2.5em -1.5em; width: calc(100% + 3em); }
+        .fader { float: left; padding-bottom: calc(33.33% * 19/25); position: relative; width: 33.33%; }
+        .fader:nth-child(3) { float: none; overflow: hidden; width: auto; }
+            .fader img { height: 100%; position: absolute; width: 100%; }
+                .fader img.active {z-index: 2;}
+                .fader img.inactive {z-index: 1;}
+
+    .sprites-line { margin-bottom:1em; text-align: center; }
+        .sprites-line img + img { margin-left:4em; }
+        /*.sprites-line + p {margin: 1em 0 0;}*/
+
+    .genre { width: auto; padding: 0.25em 0 }
+        .genre p { float: left; width: 70%; padding: 1.5em 5%; }
+        .genre img { float: left; width: 20%; }
+
+    .clearboth { clear: both; }
+
+#footer { border-top: 1px solid white; padding: 0.5em; }
+    </style>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+  </head>
   <body>
     <div id="wrapper">
 
       <div id="header">
-        <div class="top-shortcut">
-          Short link: <a href="http://fangam.es/intro">fangam.es/intro</a>
+        <img src="images/logo.png" alt="Logo image with some IWBTG fangame icons - the kid, a spike, an apple, Miku, Geezer, Boshy."/>
+        <div>
+          <h1 id="Title">I Wanna Be The Guy Fangames</h1>
+          <!--<p>An introduction and collection of links</p>-->
+          <!--<div class="top-shortcut">
+            Short link: <a href="http://fangam.es/intro">fangam.es/intro</a>
+          </div>-->
         </div>
-        <h1 id="Title">Welcome to IWBTG Fangames</h1>
       </div>
 
       <div id="content">
-        <p>I Wanna Be The Guy Fangames, also known as Guy games or I Wanna games, are a niche genre of freeware platformer games. Whether you know of some popular fangames like Not Another Needle Game, Boshy, or Kamilia 2 or 3, or if you're totally new, this page will hopefully give you a quick overview of what the fangame community is all about!</p>
-        <p>Check out some game screenshots!</p>
+        <div class="links">
+          <div class="link"><a href="https://www.iwannawiki.com/"><img src="images/wiki.png" alt="I Wanna Wiki logo"/><span>I Wanna Wiki</span></a> - The main list and upload website for fangames</div>
+          <div class="link"><a href="https://delicious-fruit.com/"><img src="images/cherry.gif" alt="Delicious Fruit logo"/><span>Delicious Fruit</span></a> - Reviews, ratings, tags, and advanced search for fangames</div>
+          <div class="link"><a href="https://www.twitch.tv/directory/game/I%20Wanna%20Be%20The%20Guy"><img src="images/twitch.png" alt="Twitch logo"/><span>IWBTG Twitch directory</span></a> - Daily fangame streams on Twitch</div>
+          <!--<div class="link"><a href=""><img src="images/twitch.png" alt="Twitch logo"/>I Wanna Maker Twitch directory</a></div>-->
+          <div class="link"><a href="https://www.twitch.tv/team/thewannabes"><img src="images/twitch.png" alt="Twitch logo"/><span>The Wannabes Twitch Team</span></a></div>
+          <div class="link"><a href="https://discord.gg/SjpjuaH"><img src="images/discord.png" alt="Discord logo"/><span>I Wanna Community Discord</span></a> - Active community Discord chatroom</div>
+          <div class="link"><a href="https://discord.com/invite/TSkt4cY"><img src="images/discord.png" alt="Discord logo"/><span>Fangame Making Contests Discord</span></a></div>
+          <div class="link"><a href="https://cwpat.me/beginner-fangames/"><img src="images/icon_medium.png" alt="Introduction to fangames icon"/><span>Beginner-friendly fangames</span></a></div>
+          <div class="link"><a href="https://store.steampowered.com/app/1114940/I_Wanna_Maker/"><img src="images/iwm.png" alt="I Wanna Maker logo"/><span>I Wanna Maker</span></a> - Free to play IWBTG fangame maker game on Steam</div>
+          <div class="link"><a href="https://www.youtube.com/c/FangameMarathon/videos"><img src="images/fm.png" alt="Fangame Marathon logo"/><span>Fangame Marathon YouTube</span></a> - Archives of the yearly speedrunning marathon</div>
+          <div class="link"><a href="https://www.youtube.com/c/FangameMarathon/videos"><img src="images/fm.png" alt="Fangame Marathon logo"/><span>Fangame Summer Feast YouTube</span></a> - Archives of the yearly Chinese speedrunning marathon</div>
+          <div class="link"><a href="https://docs.google.com/spreadsheets/d/1Onx-U0OnDX8AevfSvXWhl3KPc95flHNCXjiQQDbSX8M/edit#gid=0"><img src="images/timeline.png" alt="Timeline icon"/><span>Timeline</span></a></div>
+        </div>
+
+        <h2>About</h2>
+        <p>I Wanna Be The Guy Fangames are a niche genre of freeware platformer games based around a set of super-tight player physics and instant respawns when you die.</p>
+
+        <p>The English-speaking IWBTG fangame community is most active on Twitch and Discord. To connect with the community, you can view and chat in Twitch streams, join the I Wanna Community Discord server, and join the many Discord servers of individual Twitch streamers.</p>
+
+        <p>Making fangames can be a fun and rewarding hobby! Upsides include a convenient base engine so you don't start from scratch, passionate fangame makers to get help and feedback from, and a guaranteed audience for your games in the community, on Delicious Fruit and Twitch.</p>
 
         <div class="fader-container">
           <div class="fader" id="fader1">
@@ -60,32 +139,18 @@
           </div>
         </div>
 
-        <h2 id="Basics">The basics</h2>
-        <p>Fangames are based on super-tight player physics, a double jump, and instant and infinite respawns when you die. There are many genres that all share this common ground, including action-adventure, intricate platforming, bullet hell, medleys of other fangames, and more. Their full name is technically "IWBTG fangames" since they originated from a game called I Wanna Be The Guy (read below), but we shorten it to just "fangames".</p>
-
-        <div class="sprites-line">
-          <img src="images/sprite_spike.png" alt="Spike sprite"/>
-          <img src="images/sprite_kid.png" alt="Kid sprite"/>
-          <img src="images/sprite_save.png" alt="Save sprite"/>
-        </div>
-
-        <p>All of the 10000+ fangames are free to download and play! And most are not GPU-intensive, so older computers can run them just fine. The default controls are, by tradition, Shift to jump, Z to shoot, R to respawn, and Escape to quit.</p>
-
-        <p>Our community plays and chats about fangames 24 hours a day on the <a href="https://www.twitch.tv/directory/game/I%20Wanna%20Be%20The%20Guy" target="_blank">Twitch IWBTG directory</a>. Speedrunning fangames is popular, and we track records on our <a href="http://www.speedrun.com/iwbtgfg" target="_blank">Speedrun.com page</a>. And last but not least, our main website which indexes most of the fangames is <a href="http://delicious-fruit.com/" target="_blank">Delicious Fruit</a>.</p>
-
-        <h2 id="Genres">Common fangame genres</h2>
         <div class="genre">
-          <p><b>Adventure fangames</b> are generally well-rounded and have gimmicks and bosses.</p>
+          <p><b>Adventure fangames</b> are generally well-rounded, with various themed areas and bosses.</p>
           <img src="images/genre-screenshots/adventure.png">
           <div class="clearboth"></div>
         </div>
         <div class="genre">
           <img src="images/genre-screenshots/needle.png">
-          <p><b>Needle fangames</b> focus on intricate, precise spike platforming.</p>
+          <p><b>Needle fangames</b> focus on intricate, precise platforming with spikes and various mechanics.</p>
           <div class="clearboth"></div>
         </div>
         <div class="genre">
-          <p><b>Trap or "troll" fangames</b> are overloaded with clever and funny traps.</p>
+          <p><b>Trap or "troll" fangames</b> are loaded with funny and clever traps.</p>
           <img src="images/genre-screenshots/trap.png">
           <div class="clearboth"></div>
         </div>
@@ -99,6 +164,79 @@
           <img src="images/genre-screenshots/medley.png">
           <div class="clearboth"></div>
         </div>
+
+        <br/>
+        <br/>
+        <br/>
+
+        <div class="sprites-line">
+          <img src="images/sprite_spike.png" alt="Spike sprite"/>
+          <img src="images/sprite_kid.png" alt="Crimson kid sprite"/>
+          <img src="images/sprite_save.png" alt="Save point sprite"/>
+        </div>
+
+        <br/>
+        <h2>Additional links</h2>
+        <br/>
+        <div class="links">
+          <div class="link"><a href="https://delicious-fruit.com/bingo/b.php"><img src="images/srl.png" alt="SpeedRunsLive SRL logo"/><span>Bingo Races</span></a></div>
+          <div class="link"><a href="http://klazen.com/IWBTG/tutorial/dev_tutorial.html"><img src="images/gamemaker.png" alt="GameMaker: Studio logo"/><span>Fangame development tutorial</span></a> - Slightly outdated; ask for help in the community Discord!</div>
+          <div class="link"><a href="https://www.speedrun.com/iwbtgfg"><img src="images/speedrundotcom.png" alt="Speedrun.com logo"/><span>Speedrun.com page</span></a></div>
+          <div class="link"><a href=""><img src="" alt=""/><span>GDQ and ESA runs (TODO)</span></a></div>
+          <div class="link"><a href="https://www.rockpapershotgun.com/2020/05/20/how-i-wanna-run-the-marathon-riffed-on-mario-to-draw-a-crowd/"><img src="images/rps.png" alt="Rock Paper Shotgun logo"/><span>Rock Paper Shotgun article</span></a></div>
+          <div class="link"><a href="https://live.nicovideo.jp/search?keyword=%E3%82%A2%E3%82%A4%E3%83%AF%E3%83%8A&kind=tags"><img src="images/nico.png" alt="NicoNico logo"/><span>IWBTG on NicoNico</span></a> - Japanese streaming site for fangames</div>
+          <div class="link"><a href=""><img src="" alt=""/><span>IWBTG on Bilibili (TODO)</span></a> - Chinese streaming site for fangames</div>
+          <div class="link"><a href="https://iwannacommunity.com/forum/"><img src="images/forum.png" alt="Forum icon"/><span>Forum archive</span></a></div>
+          <div class="link"><a href="http://www.tinyurl.com/geezerslist"><img src="images/favorites.png" alt="Favorites icon"/><span>Geezer's fangame list</span></a></div>
+          <div class="link"><a href="http://tinyurl.com/lgeymuu"><img src="images/favorites.png" alt="Favorites icon"/><span>Sunbla and Zero's recommended list</span></a></div>
+          <div class="link"><a href="https://docs.google.com/spreadsheets/d/1XBMeBJnDFgL8vwx-pyIEMRtrzDOLc3O6VyWKVRhKyt8/edit#gid=0"><img src="images/favorites.png" alt="Favorites icon"/><span>Paragus's favorites list</span></a></div>
+          <div class="link"><a href="https://docs.google.com/spreadsheet/ccc?key=0Ai5kGaEf_4pidE5NNklnR2VPMUZEbklDeGNldnRGQmc&usp=sharing"><img src="images/favorites.png" alt="Favorites icon"/><span>Denferok's recommended list</span></a></div>
+          <div class="link"><a href="https://docs.google.com/spreadsheets/d/1QG6OskO5wpjnLqcCeVz2JiJ-l_kuUVwL-cZeVXUXezw/edit?usp=sharing"><img src="images/favorites.png" alt="Favorites icon"/><span>Chatran's fangame list</span></a></div>
+          <!--
+          <div class="link"><a href=""><img src="" alt=""/><span></span></a></div>
+          -->
+        </div>
+
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <p>Twitch Partner fangame streamers</p>
+        <p>TODO</p>
+        <br/>
+        <br/>
+        <p>Twitch Affiliate fangame streamers</p>
+        <p>TODO</p>
+        <br/>
+        <br/>
+        <p>Fangamer YouTube channels</p>
+        <p>TODO</p>
+
+        <p>If you have any ideas for how to improve this page, such as additional writing or links, please let me know! :) I'm Patrick # 0303 on Discord and @clockworkpat on Twitter.</p>
+
+        <br/>
+        <br/>
+
+        <div class="sprites-line">
+          <img src="images/gzaF.png" alt="gzaF Twitch emote"/>
+          <img src="images/paraKid.png" alt="paraKid Twitch emote"/>
+          <img src="images/yoyoYo.png" onClick="toggleEmote(this)" alt="yoyoYo Twitch emote"/>
+        </div>
+
+        <!--
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+        <p>I Wanna Be The Guy Fangames, also known as Guy games or I Wanna games, are a niche genre of freeware platformer games. Whether you know of some popular fangames like Not Another Needle Game, Boshy, or Kamilia 2 or 3, or if you're totally new, this page will hopefully give you a quick overview of what the fangame community is all about!</p>
+        <p>Check out some game screenshots!</p>
+
+        <h2 id="Basics">The basics</h2>
+        <p>Fangames are based on super-tight player physics, a double jump, and instant and infinite respawns when you die. There are many genres that all share this common ground, including action-adventure, intricate platforming, bullet hell, medleys of other fangames, and more. Their full name is technically "IWBTG fangames" since they originated from a game called I Wanna Be The Guy (read below), but we shorten it to just "fangames".</p>
+
+        <p>All of the 10000+ fangames are free to download and play! And most are not GPU-intensive, so older computers can run them just fine. The default controls are, by tradition, Shift to jump, Z to shoot, R to respawn, and Escape to quit.</p>
+
+        <p>Our community plays and chats about fangames 24 hours a day on the <a href="https://www.twitch.tv/directory/game/I%20Wanna%20Be%20The%20Guy" target="_blank">Twitch IWBTG directory</a>. Speedrunning fangames is popular, and we track records on our <a href="http://www.speedrun.com/iwbtgfg" target="_blank">Speedrun.com page</a>. And last but not least, our main website which indexes most of the fangames is <a href="http://delicious-fruit.com/" target="_blank">Delicious Fruit</a>.</p>
+
+        <h2 id="Genres">Common fangame genres</h2>
 
         <h2 id="Community">Connecting with the community</h2>
         <p>Twitch streams/chats are a big part of our community, since watching fangames is just as fun as playing them! Follow the <a href="https://www.twitch.tv/directory/game/I%20Wanna%20Be%20The%20Guy" target="_blank">Twitch IWBTG directory</a> and <a href="https://www.twitch.tv/team/thewannabes" target="_blank">Twitch team</a> and interact in 24/7 fangame streams.</p>
@@ -115,12 +253,6 @@
           <br>
           4. Ask friends in the community for recommendations based on what you like.
         </p>
-
-        <div class="sprites-line">
-          <img src="images/gzaF.png" alt="gzaF Twitch emote"/>
-          <img src="images/paraKid.png" alt="paraKid Twitch emote"/>
-          <img src="images/yoyoYo.png" onClick="toggleEmote(this)" alt="yoyoYo Twitch emote"/>
-        </div>
 
         <h2 id="Backstory">A little backstory</h2>
         <p>Fangame history begins in 2007 when Kayin made the original <a href="http://kayin.moe/iwbtg/" target="_blank">I Wanna Be The Guy</a>, a game full of humor and challenge. At first, fangames of IWBTG closely imitated its formula of humorous traps and pop references. But over the years, their design gradually evolved into something else entirely. Today, fangames are an ecosystem of their own, with their own tropes and genres, and with authors and players from around the globe.</p>
@@ -139,7 +271,8 @@
         By <a href="https://www.twitter.com/clockworkpat" target="_blank">Patrickgh3</a> 2017
       </div>
 
-    </div><!-- id=wrapper -->
+    </div>
+    -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/faderStuff.js?asdf=6"></script>
