@@ -53,13 +53,18 @@ h1 { margin-top:2em; margin-left:1em; }
 .link a:visited{ color:white; }
 .link img { max-width:1.4em; max-height:1.4em; display:inline-block; margin-right:0.25em; position:absolute; }
 .link a span { margin-left:2em; }
-.links { padding-bottom:2em; }
+/*.links { padding-bottom:2em; }*/
 
 a { color:white; }
 a:visited { color:white; }
 
+/* responsive iframe code from https://stackoverflow.com/questions/25302836/responsive-video-iframes-keeping-aspect-ratio-with-only-css */
+.video-wrapper { max-width:60em; margin:auto; }
+.video-wrapper2 { -moz-box-sizing:border-box; -webkit-box-sizing:border-box; position:relative; width:100%; height:0; padding-bottom:56.25%; }
+.video-wrapper2 iframe { position:absolute; width:100%; height:100%; left:0; top:0; }
+
 #content { padding-left:1.5em; padding-right:1.5em; }
-    h2 { font-size: 2em; margin-bottom:0.5em; /*margin-top:1.5em; margin-bottom:0.5em;*/ }
+    h2 { font-size: 2em; margin-bottom:0.5em; margin-top:1em; /*margin-top:1.5em; margin-bottom:0.5em;*/ }
     p { font-size: 1.1em; line-height: 1.25em; }
         p + p {margin: 1.25em 0 0;}
     /*a { color: #4078cf; transition: color .1s linear; }
@@ -73,7 +78,7 @@ a:visited { color:white; }
                 .fader img.active {z-index: 2;}
                 .fader img.inactive {z-index: 1;}
 
-    .sprites-line { margin-bottom:1em; text-align: center; }
+    .sprites-line { margin-top:2em; margin-bottom:1em; text-align: center; }
         .sprites-line img + img { margin-left:4em; }
         /*.sprites-line + p {margin: 1em 0 0;}*/
 
@@ -102,6 +107,8 @@ a:visited { color:white; }
       </div>
 
       <div id="content">
+        <h2>Community links</h2>
+
         <div class="links">
           <div class="link"><a href="https://www.iwannawiki.com/"><img src="images/wiki.png" alt="I Wanna Wiki logo"/><span>I Wanna Wiki</span></a> - The main list and upload website for fangames</div>
           <div class="link"><a href="https://delicious-fruit.com/"><img src="images/cherry.gif" alt="Delicious Fruit logo"/><span>Delicious Fruit</span></a> - Reviews, ratings, tags, and advanced search for fangames</div>
@@ -110,7 +117,7 @@ a:visited { color:white; }
           <div class="link"><a href="https://www.twitch.tv/team/thewannabes"><img src="images/twitch.png" alt="Twitch logo"/><span>The Wannabes Twitch Team</span></a></div>
           <div class="link"><a href="https://discord.gg/SjpjuaH"><img src="images/discord.png" alt="Discord logo"/><span>I Wanna Community Discord</span></a> - Active community Discord chatroom</div>
           <div class="link"><a href="https://discord.com/invite/TSkt4cY"><img src="images/discord.png" alt="Discord logo"/><span>Fangame Making Contests Discord</span></a></div>
-          <div class="link"><a href="https://cwpat.me/beginner-fangames/"><img src="images/icon_medium.png" alt="Introduction to fangames icon"/><span>Beginner-friendly fangames</span></a></div>
+          <div class="link"><a href="https://cwpat.me/beginner-fangames/"><img src="images/icon_medium.png" alt="Introduction to fangames icon"/><span>Recommended beginner fangames</span></a></div>
           <div class="link"><a href="https://store.steampowered.com/app/1114940/I_Wanna_Maker/"><img src="images/iwm.png" alt="I Wanna Maker logo"/><span>I Wanna Maker</span></a> - Free to play IWBTG fangame maker game on Steam</div>
           <div class="link"><a href="https://www.youtube.com/c/FangameMarathon/videos"><img src="images/fm.png" alt="Fangame Marathon logo"/><span>Fangame Marathon YouTube</span></a> - Archives of the yearly speedrunning marathon</div>
           <div class="link"><a href="https://www.youtube.com/c/FangameMarathon/videos"><img src="images/fm.png" alt="Fangame Marathon logo"/><span>Fangame Summer Feast YouTube</span></a> - Archives of the yearly Chinese speedrunning marathon</div>
@@ -120,9 +127,11 @@ a:visited { color:white; }
         <h2>About</h2>
         <p>I Wanna Be The Guy Fangames are a niche genre of freeware platformer games based around a set of super-tight player physics and instant respawns when you die.</p>
 
-        <p>The English-speaking IWBTG fangame community is most active on Twitch and Discord. To connect with the community, you can view and chat in Twitch streams, join the I Wanna Community Discord server, and join the many Discord servers of individual Twitch streamers.</p>
+        <p>In 2007, <a href="http://kayin.moe/iwbtg/">Kayin released I Wanna Be The Guy</a>, which became infamous as a very difficult and ridiculous platformer. In the years since then, fangames of IWBTG sprouted up and gradually expanded into a community of their own, with currently over 8500 games, and many subgenres and evolutions of mechanics! IWBTG fangames have been featured a number of times in speedrunning marathons Games Done Quick and European Speedrunner Assembly.</p>
 
-        <p>Making fangames can be a fun and rewarding hobby! Upsides include a convenient base engine so you don't start from scratch, passionate fangame makers to get help and feedback from, and a guaranteed audience for your games in the community, on Delicious Fruit and Twitch.</p>
+        <p>The English-speaking IWBTG fangame community is most active on Twitch and Discord. To connect with the community, you can view and chat in Twitch streams, join the I Wanna Community Discord server, and join the many Discord servers of individual Twitch streamers!</p>
+
+        <p>Making IWBTG fangames can be a fun and rewarding hobby! Upsides include a convenient base engine so you don't start from scratch, passionate fangame makers to get help and feedback from, and a guaranteed audience for your games in the community, on Delicious Fruit and Twitch.</p>
 
         <div class="fader-container">
           <div class="fader" id="fader1">
@@ -138,6 +147,8 @@ a:visited { color:white; }
             <img class="inactive" src="" alt="Cycling fangame screenshot"/>
           </div>
         </div>
+
+        <h2>Common genres</h2>
 
         <div class="genre">
           <p><b>Adventure fangames</b> are generally well-rounded, with various themed areas and bosses.</p>
@@ -160,14 +171,15 @@ a:visited { color:white; }
           <div class="clearboth"></div>
         </div>
         <div class="genre">
-          <p><b>Medley fangames</b> patch together small segments from a variety of fangames in sequence.</p>
-          <img src="images/genre-screenshots/medley.png">
+          <p><b>Puzzle fangames</b> have, well, puzzles, combined with the standard player physics and obstacles.</p>
+          <img src="images/genre-screenshots/puzzle.png">
           <div class="clearboth"></div>
         </div>
-
-        <br/>
-        <br/>
-        <br/>
+        <div class="genre">
+          <img src="images/genre-screenshots/medley.png">
+          <p><b>Medley fangames</b> patch together small segments from a variety of fangames in sequence.</p>
+          <div class="clearboth"></div>
+        </div>
 
         <div class="sprites-line">
           <img src="images/sprite_spike.png" alt="Spike sprite"/>
@@ -175,23 +187,39 @@ a:visited { color:white; }
           <img src="images/sprite_save.png" alt="Save point sprite"/>
         </div>
 
+        <h2>Videos</h2>
+
+        <div class="video-wrapper">
+          <div class="video-wrapper2">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0LrYlgJ0RY8?start=403" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <div class="video-wrapper">
+          <div class="video-wrapper2">
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/yyNPekf6gTE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+
         <br/>
+        <br/>
+
         <h2>Additional links</h2>
         <br/>
         <div class="links">
+          <div class="link"><a href="https://discord.com/invite/dtMtWtW"><img src="images/discord.png" alt="Discord logo"/><span>Fangame Skill Rating Discord</span></a></div>
           <div class="link"><a href="https://delicious-fruit.com/bingo/b.php"><img src="images/srl.png" alt="SpeedRunsLive SRL logo"/><span>Bingo Races</span></a></div>
           <div class="link"><a href="http://klazen.com/IWBTG/tutorial/dev_tutorial.html"><img src="images/gamemaker.png" alt="GameMaker: Studio logo"/><span>Fangame development tutorial</span></a> - Slightly outdated; ask for help in the community Discord!</div>
-          <div class="link"><a href="https://www.speedrun.com/iwbtgfg"><img src="images/speedrundotcom.png" alt="Speedrun.com logo"/><span>Speedrun.com page</span></a></div>
-          <div class="link"><a href=""><img src="" alt=""/><span>GDQ and ESA runs (TODO)</span></a></div>
+          <div class="link"><a href="https://www.speedrun.com/iwbtgfg"><img src="images/speedrundotcom.png" alt="Speedrun.com logo"/><span>Fangames on Speedrun.com</span></a></div>
           <div class="link"><a href="https://www.rockpapershotgun.com/2020/05/20/how-i-wanna-run-the-marathon-riffed-on-mario-to-draw-a-crowd/"><img src="images/rps.png" alt="Rock Paper Shotgun logo"/><span>Rock Paper Shotgun article</span></a></div>
           <div class="link"><a href="https://live.nicovideo.jp/search?keyword=%E3%82%A2%E3%82%A4%E3%83%AF%E3%83%8A&kind=tags"><img src="images/nico.png" alt="NicoNico logo"/><span>IWBTG on NicoNico</span></a> - Japanese streaming site for fangames</div>
-          <div class="link"><a href=""><img src="" alt=""/><span>IWBTG on Bilibili (TODO)</span></a> - Chinese streaming site for fangames</div>
           <div class="link"><a href="https://iwannacommunity.com/forum/"><img src="images/forum.png" alt="Forum icon"/><span>Forum archive</span></a></div>
           <div class="link"><a href="http://www.tinyurl.com/geezerslist"><img src="images/favorites.png" alt="Favorites icon"/><span>Geezer's fangame list</span></a></div>
           <div class="link"><a href="http://tinyurl.com/lgeymuu"><img src="images/favorites.png" alt="Favorites icon"/><span>Sunbla and Zero's recommended list</span></a></div>
           <div class="link"><a href="https://docs.google.com/spreadsheets/d/1XBMeBJnDFgL8vwx-pyIEMRtrzDOLc3O6VyWKVRhKyt8/edit#gid=0"><img src="images/favorites.png" alt="Favorites icon"/><span>Paragus's favorites list</span></a></div>
           <div class="link"><a href="https://docs.google.com/spreadsheet/ccc?key=0Ai5kGaEf_4pidE5NNklnR2VPMUZEbklDeGNldnRGQmc&usp=sharing"><img src="images/favorites.png" alt="Favorites icon"/><span>Denferok's recommended list</span></a></div>
           <div class="link"><a href="https://docs.google.com/spreadsheets/d/1QG6OskO5wpjnLqcCeVz2JiJ-l_kuUVwL-cZeVXUXezw/edit?usp=sharing"><img src="images/favorites.png" alt="Favorites icon"/><span>Chatran's fangame list</span></a></div>
+          <div class="link"><a href=""><img src="" alt=""/><span>IWBTG on Bilibili (TODO)</span></a> - Chinese streaming site for fangames</div>
           <!--
           <div class="link"><a href=""><img src="" alt=""/><span></span></a></div>
           -->
@@ -213,6 +241,8 @@ a:visited { color:white; }
         <p>TODO</p>
 
         <p>If you have any ideas for how to improve this page, such as additional writing or links, please let me know! :) I'm Patrick # 0303 on Discord and @clockworkpat on Twitter.</p>
+
+        <p>Published 2017, last updated 2020</p>
 
         <br/>
         <br/>
@@ -271,26 +301,152 @@ a:visited { color:white; }
         By <a href="https://www.twitter.com/clockworkpat" target="_blank">Patrickgh3</a> 2017
       </div>
 
-    </div>
     -->
 
+      <br/><!-- This is here because the sprites-line margin was causing the background color not to extend all the way to the bottom. whatever -->
+
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="js/faderStuff.js?asdf=6"></script>
-    <script src="js/toggleEmote.js?asdf=6"></script>
 
 <!-- Matomo -->
 <script type="text/javascript">
-  var _paq = _paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//cwpat.me/analytics/piwik/";
-    _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', '1']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-  })();
+var _paq = _paq || [];
+/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+_paq.push(['trackPageView']);
+_paq.push(['enableLinkTracking']);
+(function() {
+  var u="//cwpat.me/analytics/piwik/";
+  _paq.push(['setTrackerUrl', u+'piwik.php']);
+  _paq.push(['setSiteId', '1']);
+  var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+  g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+})();
+
+// Toggle image source between yoyoYo and cornBlack
+function toggleEmote(imgElt) {
+    if (imgElt.src.search("yoyoYo.png") != -1) {
+        imgElt.src = "images/cornBlack.png";
+    }
+    else {
+        imgElt.src = "images/yoyoYo.png";
+    }
+}
+
+// Controls periodically fading unique images from a pool
+
+function main() {
+    initImage(document.getElementById("fader1"), 1);
+    initImage(document.getElementById("fader2"), 2);
+    initImage(document.getElementById("fader3"), 3);
+}
+
+function initImage(faderElt, timerOffset) {
+    // Register initial source as used
+    var active = faderElt.querySelector(".active");
+    usedSources.push(active.src);
+
+    // Start off timings
+    function initialFadeAndSetInterval() {
+        var startFadeSelf = function(){startNewFade(faderElt);};
+        startFadeSelf();
+        setInterval(startFadeSelf, cycleDuration);
+    }
+    setTimeout(initialFadeAndSetInterval, cycleDuration * timerOffset / 3);
+}
+
+// Starts a new transition of a fader
+function startNewFade(faderElt) {
+    // Grab image children and propagate new source
+    var active = faderElt.querySelector(".active");
+    var inactive = faderElt.querySelector(".inactive");
+    var newSrc = pickUnusedSource();
+    usedSources.push(newSrc);
+    inactive.src = active.src;
+    active.src = newSrc;
+
+    // Start fade in
+    active.style.display = "none";
+    $(active).fadeIn(fadeDuration, function() {
+        removeFromUsedSources(inactive.src);
+    });
+}
+
+// Returns random element of allSources that's not present in usedSources
+function pickUnusedSource() {
+    var index = -1;
+    var chosenSource = "";
+    var attemptsLeft = 20;
+    while (true) {
+        index = Math.floor(Math.random() * allSources.length);
+        chosenSource = allSources[index];
+        if (indexOfStringPart(usedSources, chosenSource) == -1) {
+            break;
+        }
+        attemptsLeft -= 1;
+        if (attemptsLeft <= 0) break;
+    }
+    return chosenSource;
+}
+
+// Checks if a string is a substring or a superstring of any element
+// in a list, and returns the index, or -1 if none.
+// e.g. "http://a.com/b/c.png" and "b/c.png", or vice versa.
+function indexOfStringPart(list, val) {
+    for (var i=0; i<list.length; i++) {
+        if (val.indexOf(list[i]) != -1 || list[i].indexOf(val) != -1) {
+            return i;
+        }
+    }
+    return -1;
+}
+
+// Removes a string from usedSources which is either a substring or superstring
+// of a given string.
+function removeFromUsedSources(toRemove) {
+    var i = indexOfStringPart(usedSources, toRemove);
+    usedSources.splice(i, 1);
+}
+
+fadeDuration = 1500;  // Length of fade transition
+cycleDuration = 6000; // Wait time between transitions
+usedSources = [];
+allSources = [
+ "images/screenshots/destiny.png"
+,"images/screenshots/scribble.png"
+,"images/screenshots/snowmagic.png"
+,"images/screenshots/orion.png"
+,"images/screenshots/snowmagic.png"
+,"images/screenshots/bread.png"
+,"images/screenshots/idk1.png"
+,"images/screenshots/25level.png"
+,"images/screenshots/idk2.png"
+,"images/screenshots/sillyne3.png"
+,"images/screenshots/kermit.png"
+,"images/screenshots/idk3.png"
+,"images/screenshots/idk4.png"
+,"images/screenshots/marathon.png"
+,"images/screenshots/coop.png"
+,"images/screenshots/magictower.png"
+,"images/screenshots/hanamogeta.png"
+,"images/screenshots/chaton.png"
+,"images/screenshots/sek.png"
+,"images/screenshots/god.png"
+,"images/screenshots/cultured2.png"
+,"images/screenshots/spookjam.png"
+,"images/screenshots/safespace.png"
+,"images/screenshots/abducted.png"
+,"images/screenshots/scribble.png"
+,"images/screenshots/stumble.png"
+,"images/screenshots/writtenchal.png"
+,"images/screenshots/idk5.png"
+,"images/screenshots/nang.png"
+,"images/screenshots/diminish.png"
+,"images/screenshots/slimepark.png"
+];
+
+main();
+
 </script>
 <!-- End Matomo Code -->
 
