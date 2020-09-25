@@ -32,19 +32,29 @@
 * { margin: 0; padding: 0; }
 body {
     font-family: "Helvetica Neue", "Calibri Light", Roboto, sans-serif;
-    -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; letter-spacing: 0.01em;
+    /*-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; letter-spacing: 0.01em;*/
     color:white;
     background-color: #175145;
     background-image: linear-gradient(#298875, #16483D);
 }
 
+a { color:white; }
+a:visited { color:white; }
+h1 { font-size:2.25em; margin-top:2em; margin-left:1em; }
+h2 { font-size: 1.75em; margin-bottom:0.5em; margin-top:1em; /*margin-top:1.5em; margin-bottom:0.5em;*/ }
+p { font-size: 1.1em; line-height: 1.25em; }
+p + p {margin: 1.25em 0 0;}
+
+/* responsive iframe code from https://stackoverflow.com/questions/25302836/responsive-video-iframes-keeping-aspect-ratio-with-only-css */
+.video-wrapper { max-width:60em; margin:auto; }
+.video-wrapper2 { -moz-box-sizing:border-box; -webkit-box-sizing:border-box; position:relative; width:100%; height:0; padding-bottom:56.25%; }
+.video-wrapper2 iframe { position:absolute; width:100%; height:100%; left:0; top:0; }
+
 #wrapper { background-color: rgba(0, 0, 0, 0.35); margin: 0 auto; max-width: 50em; }
 
-/*#header { padding: 0.5em 1.5em 1.5em; }*/
 #header { text-align:center; padding-bottom:1em; padding-top:1em; }
 #header img { display:inline-block; vertical-align:top; max-width:8em; }
 #header div { display:inline-block; }
-h1 { font-size:2.25em; margin-top:2em; margin-left:1em; }
 /*.top-shortcut { text-align: right; }*/
 
 .link { margin:0; font-size:1.1em; }
@@ -55,40 +65,29 @@ h1 { font-size:2.25em; margin-top:2em; margin-left:1em; }
 .link a span { margin-left:2em; }
 /*.links { padding-bottom:2em; }*/
 
-a { color:white; }
-a:visited { color:white; }
-
-/* responsive iframe code from https://stackoverflow.com/questions/25302836/responsive-video-iframes-keeping-aspect-ratio-with-only-css */
-.video-wrapper { max-width:60em; margin:auto; }
-.video-wrapper2 { -moz-box-sizing:border-box; -webkit-box-sizing:border-box; position:relative; width:100%; height:0; padding-bottom:56.25%; }
-.video-wrapper2 iframe { position:absolute; width:100%; height:100%; left:0; top:0; }
-
 #content { padding-left:1.5em; padding-right:1.5em; }
-    h2 { font-size: 1.75em; margin-bottom:0.5em; margin-top:1em; /*margin-top:1.5em; margin-bottom:0.5em;*/ }
-    p { font-size: 1.1em; line-height: 1.25em; }
-        p + p {margin: 1.25em 0 0;}
-    /*a { color: #4078cf; transition: color .1s linear; }
-        a:visited {color: #9740CF;}
-        a:hover {color: #CF4078;}*/
+/*a { color: #4078cf; transition: color .1s linear; }
+    a:visited {color: #9740CF;}
+    a:hover {color: #CF4078;}*/
 
-    .fader-container { margin: 2.5em -1.5em; width: calc(100% + 3em); }
-        .fader { float: left; padding-bottom: calc(33.33% * 19/25); position: relative; width: 33.33%; }
-        .fader:nth-child(3) { float: none; overflow: hidden; width: auto; }
-            .fader img { height: 100%; position: absolute; width: 100%; }
-                .fader img.active {z-index: 2;}
-                .fader img.inactive {z-index: 1;}
+.fader-container { margin: 2.5em -1.5em; width: calc(100% + 3em); }
+    .fader { float: left; padding-bottom: calc(33.33% * 19/25); position: relative; width: 33.33%; }
+    .fader:nth-child(3) { float: none; overflow: hidden; width: auto; }
+        .fader img { height: 100%; position: absolute; width: 100%; }
+            .fader img.active {z-index: 2;}
+            .fader img.inactive {z-index: 1;}
 
-    .sprites-line { margin-top:2em; margin-bottom:1em; text-align: center; }
-        .sprites-line img + img { margin-left:4em; }
-        /*.sprites-line + p {margin: 1em 0 0;}*/
+.sprites-line { margin-top:2em; margin-bottom:1em; text-align: center; }
+    .sprites-line img + img { margin-left:4em; }
+    /*.sprites-line + p {margin: 1em 0 0;}*/
 
-    .genre { width: auto; padding: 0.25em 0 }
-        .genre p { float: left; width: 70%; padding: 1.5em 5%; }
-        .genre img { float: left; width: 20%; }
+.genre { width: auto; padding: 0.25em 0 }
+    .genre p { float: left; width: 70%; padding: 1.5em 5%; }
+    .genre img { float: left; width: 20%; }
 
-    .clearboth { clear: both; }
+.clearboth { clear: both; }
 
-#footer { border-top: 1px solid white; padding: 0.5em; }
+/*#footer { border-top: 1px solid white; padding: 0.5em; }*/
     </style>
     <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
